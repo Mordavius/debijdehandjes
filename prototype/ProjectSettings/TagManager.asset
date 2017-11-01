@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Square
   - Rake
+  - Seed
+  - WC
+  - Carrot
   layers:
   - Default
   - TransparentFX

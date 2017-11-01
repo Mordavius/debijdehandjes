@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SeedPlacement : MonoBehaviour {
-    public GameObject gevuld;
+public class CollectCarrots : MonoBehaviour {
+
 	// Use this for initialization
 	void Start () {
 		
@@ -16,10 +16,10 @@ public class SeedPlacement : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Seed")
+        if (other.tag == "Carrot")
         {
-            Instantiate(gevuld, transform.position, transform.rotation);
-            Destroy(this.gameObject);
+            Rigidbody2D rb = other.GetComponent<Rigidbody2D>();
+            rb.gravityScale = 10f;
         }
     }
 }
