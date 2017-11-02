@@ -5,8 +5,19 @@ using System.Collections;
 
 public class DragTest : MonoBehaviour
 {
+    float startX;
+    float startY;
+    float startZ;
+
     private Vector3 screenPoint;
     private Vector3 offset;
+
+    void Start()
+    {
+        startX = transform.position.x;
+        startY = transform.position.y;
+        startZ = transform.position.z;
+    }
 
     void OnMouseDown()
     {
@@ -19,5 +30,10 @@ public class DragTest : MonoBehaviour
         Vector3 curScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z);
         Vector3 curPosition = Camera.main.ScreenToWorldPoint(curScreenPoint) + offset;
         transform.position = curPosition;
+    }
+
+    void OnMouseUp()
+    {
+        transform.position = new Vector3(startX, startY, startZ);
     }
 }
