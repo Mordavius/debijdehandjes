@@ -18,8 +18,12 @@ public class RakeSpotBuilder : MonoBehaviour {
     {
         if (other.tag == "Rake")
         {
-            Instantiate(gezaait, transform.position, transform.rotation);
-            Destroy(this.gameObject);
+            if (this.enabled)
+            {
+                Destroy(this.gameObject);
+                Instantiate(gezaait, transform.position, transform.rotation);
+                this.enabled = false;
+            }
         }
     }
 }
