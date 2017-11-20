@@ -9,6 +9,7 @@ TagManager:
   - Seed
   - WC
   - Carrot
+  - ContactPoint
   layers:
   - Default
   - TransparentFX
