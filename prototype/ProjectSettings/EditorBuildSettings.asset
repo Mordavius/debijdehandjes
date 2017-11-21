@@ -4,4 +4,19 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 0
+    path: Assets/scenes/prototype1/prototype 03-11-2017.unity
+    guid: 7407131b9dbb31e4e80d150b4cf804c7
+  - enabled: 1
+    path: Assets/scenes/mainmenu.unity
+    guid: 2cbe3c0e1a432f649b491ad06a977d04
+  - enabled: 1
+    path: Assets/scenes/prototype2/moestuin.unity
+    guid: 61de7b37387fe9147ba43cfcd5c42b26
+  - enabled: 1
+    path: Assets/scenes/prototype2/pompen.unity
+    guid: c073f66ddfb7cb6418c268dc05b578e5
+  - enabled: 1
+    path: Assets/scenes/prototype2/puzzel.unity
+    guid: 9f5c2601aab94f54baee50e14b54884d
