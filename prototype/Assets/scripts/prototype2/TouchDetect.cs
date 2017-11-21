@@ -7,15 +7,20 @@ public class TouchDetect : MonoBehaviour {
     private bool down;
     public GameObject waterSpawn;
     public GameObject waterDrop;
-    float timer
+    public Sprite[] bucket = new Sprite[4];
+
+    float timer;
+    public int waterCount;
 	// Use this for initialization
 	void Start () {
         up = false;
-        down = false;	
+        down = false;
+        timer = 0f;	
 	}
 	
 	// Update is called once per frame
 	void Update () {
+        timer += Time.deltaTime;
 		int nbTouches = Input.touchCount;
 
         if(nbTouches > 0)
@@ -40,6 +45,7 @@ public class TouchDetect : MonoBehaviour {
                     if (up && down)
                     {
                         Instantiate(waterDrop, waterSpawn.transform.position, waterSpawn.transform.rotation);
+                        waterCount++;
                         up = false;
                         down = false;
                     }
