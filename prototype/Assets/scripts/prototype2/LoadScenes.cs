@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LoadScenes : MonoBehaviour {
 
@@ -15,22 +16,22 @@ public class LoadScenes : MonoBehaviour {
 		
 	}
 
-    public static void loadMain()
+    public void loadMain()
     {
         SceneManager.LoadScene(0);
     }
 
-    public static void loadGarden()
+    public void loadGarden()
     {
         SceneManager.LoadScene(1);
     }
 
-    public static void loadPump()
+    public void loadPump()
     {
         SceneManager.LoadScene(2);
     }
 
-    public static void loadPuzzle()
+    public void loadPuzzle()
     {
         SceneManager.LoadScene(3);
     }
