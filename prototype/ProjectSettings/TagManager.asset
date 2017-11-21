@@ -8,10 +8,10 @@ TagManager:
   - Rake
   - Seed
   - WC
-  - Carrot
   - Up
   - Down
   - Water
+  - ContactPoint
   layers:
   - Default
   - TransparentFX
