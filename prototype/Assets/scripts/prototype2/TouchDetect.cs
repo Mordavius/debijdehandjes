@@ -33,7 +33,6 @@ public class TouchDetect : MonoBehaviour {
                 if (touch.phase == TouchPhase.Moved)
                 {
                      RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(touch.position), Vector2.zero);
-                   
                       if (hit.collider.CompareTag("Up"))
                       {
                          up = true;

@@ -5,32 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class LoadScenes : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
-    public static void loadMain()
+    public void loadMain()
     {
         SceneManager.LoadScene(0);
     }
 
-    public static void loadGarden()
+    public void loadGarden()
     {
         SceneManager.LoadScene(1);
     }
 
-    public static void loadPump()
+    public void loadPump()
     {
         SceneManager.LoadScene(2);
     }
 
-    public static void loadPuzzle()
+    public void loadPuzzle()
     {
         SceneManager.LoadScene(3);
     }
