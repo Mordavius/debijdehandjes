@@ -18,5 +18,6 @@ public class PuzzleConnect : MonoBehaviour {
             }
             this.transform.position = new Vector2(other.transform.position.x, other.transform.position.y);
         }
+        //this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, -1);
     }
 }
