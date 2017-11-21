@@ -9,6 +9,9 @@ TagManager:
   - Seed
   - WC
   - Carrot
+  - Up
+  - Down
+  - Water
   layers:
   - Default
   - TransparentFX
