@@ -12,6 +12,7 @@ TagManager:
   - Down
   - Water
   - ContactPoint
+  - Tile
   layers:
   - Default
   - TransparentFX
