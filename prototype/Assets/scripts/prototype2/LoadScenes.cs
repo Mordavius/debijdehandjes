@@ -8,21 +8,21 @@ public class LoadScenes : MonoBehaviour {
 
     public void loadMain()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("mainmenu");
     }
 
     public void loadGarden()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("moestuin");
     }
 
     public void loadPump()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("pompen");
     }
 
     public void loadPuzzle()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene("puzzel");
     }
 }
