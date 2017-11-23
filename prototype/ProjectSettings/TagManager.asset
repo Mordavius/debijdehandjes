@@ -13,6 +13,7 @@ TagManager:
   - Water
   - ContactPoint
   - Tile
+  - RakedGround
   layers:
   - Default
   - TransparentFX
