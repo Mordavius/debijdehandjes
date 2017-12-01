@@ -2,48 +2,49 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TileBehaviour : MonoBehaviour {
-
+public class TileBehaviour : MonoBehaviour
+{
+    Plant plant;
     public int state;
-    public int seedType;
+    public int plantType;
+    
+    public float growth;
+    public float growthMultiplier;
+    public int score;
+
     public Sprite[] sprite;
 
     /* state
-     * 0 = lege tile
-     * 1 = geharkt
+     * 0 = empty tile
+     * 1 = raked
      * 2 = seeded
-     * 
-     * seedType
-     * 0 = niks
-     * 1 = wortel
-     * etc.
      */
 
-	// Use this for initialization
 	void Start () {
+        // to make testing easier
         state = 0;
-	}
+    }
 	
-	// Update is called once per frame
 	void Update () {
-        GetComponent<SpriteRenderer>().sprite = sprite[state];
-        if (state != 0)
+        // check for state, if 2 it means seeds are on it, then check what seed
+        if (state == 0 || state == 1)
         {
-            transform.localScale = new Vector3(0.72f, 0.48f, 0);
+            GetComponent<SpriteRenderer>().sprite = sprite[state];
         }
-        else
-        {
-            transform.localScale = new Vector3(1, 1, 0);
-        }
+        //TODO: create new gameObject with seed
+        //Debug.Log(growth -= Time.deltaTime);
+
     }
 
+    // these functions are for receiving vars from the seeds
     void ChangeState(int newState)
     {
         state = newState;
     }
 
-    void ChangeSeed(int newSeed)
+    void SeedPlant(Plant newPlant)
     {
-        seedType = newSeed;
+        plant = newPlant;
+        Debug.Log(plant.score);
     }
 }

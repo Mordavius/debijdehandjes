@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class MoestuinTouch : MonoBehaviour
 {
-    public GameObject rakedGround;
-
     // Update is called once per frame
     void Update()
     {

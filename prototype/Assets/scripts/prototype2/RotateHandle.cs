@@ -13,7 +13,7 @@ public class RotateHandle : MonoBehaviour {
 
     void Start()
     {
-        _sensitivity = 0.18f;
+        _sensitivity = 0.1f;
         _rotation = Vector3.zero;
     }
 
