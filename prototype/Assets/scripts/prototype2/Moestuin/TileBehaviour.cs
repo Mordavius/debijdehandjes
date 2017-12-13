@@ -2,23 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+enum TileState { blank, raked, seeded }
+
 public class TileBehaviour : MonoBehaviour
 {
     Plant plant;
     public int state;
     public int plantType;
-    
-    public float growth;
-    public float growthMultiplier;
-    public int score;
 
     public Sprite[] sprite;
-
-    /* state
-     * 0 = empty tile
-     * 1 = raked
-     * 2 = seeded
-     */
 
 	void Start () {
         // to make testing easier
@@ -26,14 +18,16 @@ public class TileBehaviour : MonoBehaviour
     }
 	
 	void Update () {
-        // check for state, if 2 it means seeds are on it, then check what seed
-        if (state == 0 || state == 1)
+        // check for state, if 2 it means seeds are on it
+        if (state == (int)TileState.blank || state == (int)TileState.raked)
         {
             GetComponent<SpriteRenderer>().sprite = sprite[state];
         }
         //TODO: create new gameObject with seed
-        //Debug.Log(growth -= Time.deltaTime);
-
+        if (state == (int)TileState.seeded)
+        {
+            plant.Grow();
+        }
     }
 
     // these functions are for receiving vars from the seeds

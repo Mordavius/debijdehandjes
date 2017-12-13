@@ -25,4 +25,14 @@ public class LoadScenes : MonoBehaviour {
     {
         SceneManager.LoadScene("puzzel");
     }
+
+    public void loadMemory()
+    {
+        SceneManager.LoadScene("Memory");
+    }
+
+    public void loadCarrot()
+    {
+        SceneManager.LoadScene("CarrotPulling");
+    }
 }

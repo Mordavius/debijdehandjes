@@ -16,10 +16,13 @@ public class MoestuinTouch : MonoBehaviour
                 if (touch.phase == TouchPhase.Moved)
                 {
                     RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(touch.position), Vector2.zero);
-                    TileBehaviour targetScript = hit.collider.gameObject.GetComponent<TileBehaviour>();
-                    if (hit.collider.CompareTag("Tile") && targetScript.state == 0)
+                    if (hit)
                     {
-                        hit.transform.SendMessageUpwards("ChangeState", 1);
+                        TileBehaviour targetScript = hit.collider.gameObject.GetComponent<TileBehaviour>();
+                        if (hit.collider.CompareTag("Tile") && targetScript.state == 0)
+                        {
+                            hit.transform.SendMessageUpwards("ChangeState", 1);
+                        }
                     }
                 }
             }
