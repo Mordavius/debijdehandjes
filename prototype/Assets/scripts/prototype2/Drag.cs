@@ -9,7 +9,6 @@ public class Drag : MonoBehaviour {
 
     void OnMouseDown()
     {
-        Debug.Log("lololol");
         offset = gameObject.transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z));
     }
 
