@@ -53,6 +53,7 @@ public class PairCards : MonoBehaviour {
             }
         }
         cards = GameObject.FindWithTag("card");
+        Debug.Log(cards);
         if(cards == null)
         {
             scoreScreen.SetActive(true);
