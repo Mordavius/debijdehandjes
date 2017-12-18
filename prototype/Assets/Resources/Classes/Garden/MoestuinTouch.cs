@@ -18,7 +18,7 @@ public class MoestuinTouch : MonoBehaviour
                     RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(touch.position), Vector2.zero);
                     if (hit)
                     {
-                        TileBehaviour targetScript = hit.collider.gameObject.GetComponent<TileBehaviour>();
+                        Tile targetScript = hit.collider.gameObject.GetComponent<Tile>();
                         if (hit.collider.CompareTag("Tile") && targetScript.state == 0)
                         {
                             hit.transform.SendMessageUpwards("ChangeState", 1);

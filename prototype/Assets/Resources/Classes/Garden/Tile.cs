@@ -4,7 +4,7 @@ using UnityEngine;
 
 enum TileState { blank, raked, seeded }
 
-public class TileBehaviour : MonoBehaviour
+public class Tile : MonoBehaviour
 {
     Plant plant;
     public int state;
