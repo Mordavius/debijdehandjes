@@ -12,7 +12,7 @@ public class PairCards : MonoBehaviour {
 
     public GameObject scoreScreen;
 
-    GameObject cards;
+    GameObject[] cards;
     bool touching = false;
 
 	void Update () {
@@ -24,12 +24,12 @@ public class PairCards : MonoBehaviour {
 
             if (touch.phase == TouchPhase.Began)
             {
-                hit.transform.Rotate(new Vector3(0 ,180 ,0));
+                hit.transform.eulerAngles = new Vector3(0, 0, 0);
                 touching = true;
             }
             if (touch.phase == TouchPhase.Ended)
             {
-                hit.transform.Rotate(new Vector3(0, 180, 0));
+                hit.transform.eulerAngles = new Vector3(0, 180, 0);
                 touching = false;
             }
             if (touching && touches == 2)
@@ -38,23 +38,31 @@ public class PairCards : MonoBehaviour {
                 hit2 = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(touch2.position), Vector2.zero);
                 if (touch2.phase == TouchPhase.Began)
                 {
-                    hit2.transform.Rotate(new Vector3(0, 180, 0));
+                    hit2.transform.eulerAngles = new Vector3(0, 0, 0);
                 }
                 if (touch2.phase == TouchPhase.Ended)
                 {
-                    hit2.transform.Rotate(new Vector3(0, 180, 0));
+                    hit2.transform.eulerAngles = new Vector3(0, 180, 0);
                     touching = false;
                 }
-                if (hit.collider.CompareTag(hit2.collider.tag))
+                if (hit.collider.CompareTag(hit2.collider.tag) && hit.collider != hit2.collider)
                 {
                     Destroy(hit.collider.gameObject);
                     Destroy(hit2.collider.gameObject);
                 }
             }
         }
-        cards = GameObject.FindWithTag("card");
+        cards = GameObject.FindGameObjectsWithTag("card");
+        if (touches == 0)
+        {
+            foreach (GameObject card in cards)
+            {
+                card.transform.eulerAngles = new Vector3(0, 180, 0);
+            }
+        }
         Debug.Log(cards);
-        if(cards == null)
+
+        if(cards.Length <= 0)
         {
             scoreScreen.SetActive(true);
         }

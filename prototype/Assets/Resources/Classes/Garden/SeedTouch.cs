@@ -30,7 +30,7 @@ public class SeedTouch : MonoBehaviour {
     
     void OnTriggerStay2D(Collider2D other)
     {
-        TileBehaviour targetScript = other.gameObject.GetComponent<TileBehaviour>();
+        Tile targetScript = other.gameObject.GetComponent<Tile>();
         if (targetScript)
         {
             if (targetScript.state == (int)TileState.raked && Input.GetMouseButtonUp(0))

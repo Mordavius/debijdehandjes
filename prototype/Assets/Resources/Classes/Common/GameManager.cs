@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameMangager : MonoBehaviour {
+public class GameManager : MonoBehaviour {
 
     public int wateringCanLevel;
     public int money;
