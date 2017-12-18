@@ -52,8 +52,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4080960796873214}
   - component: {fileID: 212238340292513718}
-  - component: {fileID: 114603733218355632}
   - component: {fileID: 61605305762782370}
+  - component: {fileID: 114631482964163816}
   m_Layer: 0
   m_Name: memory-card-front-tomato
   m_TagString: tomato
@@ -127,7 +127,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.42, y: 10.42}
   m_EdgeRadius: 0
---- !u!114 &114603733218355632
+--- !u!114 &114631482964163816
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -135,7 +135,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1422875049075500}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6087ab904fd22742bab64419d1b69a8, type: 3}
+  m_Script: {fileID: 11500000, guid: cb26a2b10d2ca1640af5060ada7f721c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &212238340292513718

@@ -20,7 +20,7 @@ public class FlipCards : MonoBehaviour {
 
     IEnumerator wait()
     {
-        yield return new WaitForSecondsRealtime(2);
+        yield return new WaitForSecondsRealtime(7);
         speed = 200 * Time.deltaTime;
     }
 }
