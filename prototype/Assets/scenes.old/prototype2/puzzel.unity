@@ -122,7 +122,7 @@ GameObject:
   - component: {fileID: 127082608}
   - component: {fileID: 127082609}
   m_Layer: 0
-  m_Name: HarkHandvat
+  m_Name: ReekHandle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -177,8 +177,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 127082603}
   m_LocalRotation: {x: -0, y: -0, z: 0.0016620446, w: -0.9999986}
-  m_LocalPosition: {x: 3.21, y: 1.89, z: 1}
-  m_LocalScale: {x: 1.03, y: 0.88, z: 0.3795132}
+  m_LocalPosition: {x: 2.84, y: 1.23, z: 1}
+  m_LocalScale: {x: 0.5755855, y: 0.49176243, z: 0.21207991}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -216,7 +216,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 127082603}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 640c92131a73b4a4895e13f9f3653516, type: 3}
+  m_Script: {fileID: 11500000, guid: a04adc1d447d53a4fbbd2bcbd36eab1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &127082608
@@ -227,7 +227,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 127082603}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ec0ecec4d948e047b005e3ca41d3ccb, type: 3}
+  m_Script: {fileID: 11500000, guid: 395c8b415ab64f54b8d591a7268d49fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   connectPoint: {fileID: 1882708651}
@@ -354,7 +354,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 385077126}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c95cb230972c4b845b2ec6d7b4fc4d50, type: 3}
+  m_Script: {fileID: 11500000, guid: 7880f40cbc30afa46a01ef6fc96af8a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &422699030
@@ -541,7 +541,7 @@ GameObject:
   - component: {fileID: 719240930}
   - component: {fileID: 719240931}
   m_Layer: 0
-  m_Name: HarkKop
+  m_Name: ReekHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -596,8 +596,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 719240925}
   m_LocalRotation: {x: -0, y: -0, z: -0.0027972716, w: -0.9999961}
-  m_LocalPosition: {x: 4.13, y: -3.9, z: 1}
-  m_LocalScale: {x: 1.1899568, y: 1.1135646, z: 0.3494874}
+  m_LocalPosition: {x: 5.02, y: 0.59, z: 1}
+  m_LocalScale: {x: 0.6460274, y: 0.60455406, z: 0.18973665}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -635,7 +635,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 719240925}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 640c92131a73b4a4895e13f9f3653516, type: 3}
+  m_Script: {fileID: 11500000, guid: a04adc1d447d53a4fbbd2bcbd36eab1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &719240930
@@ -646,7 +646,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 719240925}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ec0ecec4d948e047b005e3ca41d3ccb, type: 3}
+  m_Script: {fileID: 11500000, guid: 395c8b415ab64f54b8d591a7268d49fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   connectPoint: {fileID: 931228124}
@@ -680,7 +680,7 @@ GameObject:
   - component: {fileID: 931228125}
   - component: {fileID: 931228126}
   m_Layer: 0
-  m_Name: Contactpunt-steel-top
+  m_Name: ContactpointSteelTop
   m_TagString: ContactPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -693,7 +693,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 931228124}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.69, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: -3.17, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2135972672}
@@ -724,7 +724,7 @@ GameObject:
   - component: {fileID: 966822631}
   - component: {fileID: 966822630}
   m_Layer: 0
-  m_Name: puzzel achtergrond zonder boer-01
+  m_Name: PuzzleBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -779,7 +779,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 966822629}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.118, y: 0.083, z: 1}
+  m_LocalPosition: {x: 0.122, y: 0.083, z: 1}
   m_LocalScale: {x: 0.95231986, y: 0.95231986, z: 0.95231986}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1014,7 +1014,7 @@ GameObject:
   - component: {fileID: 1328820163}
   - component: {fileID: 1328820162}
   m_Layer: 0
-  m_Name: ContactpuntHand
+  m_Name: ContactpointHand
   m_TagString: ContactPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1134,7 +1134,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1695545496}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e968013266cb48945a269a0a54e89b9b, type: 3}
+  m_Script: {fileID: 11500000, guid: 4f6b5a519389c7344a65f6db9ba3eeb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   finishScreen: {fileID: 682811394}
@@ -1283,7 +1283,7 @@ GameObject:
   - component: {fileID: 1882708653}
   - component: {fileID: 1882708652}
   m_Layer: 0
-  m_Name: Contactpunt-steel-bottom
+  m_Name: ContactpointSteelBottom
   m_TagString: ContactPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1311,7 +1311,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1882708651}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.4, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: 3.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2135972672}
@@ -1327,7 +1327,7 @@ GameObject:
   - component: {fileID: 1911983446}
   - component: {fileID: 1911983445}
   m_Layer: 0
-  m_Name: boer3uitgewerkt
+  m_Name: Farmer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1660,8 +1660,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2135972670}
   m_LocalRotation: {x: -0, y: -0, z: 1, w: -0.0001114311}
-  m_LocalPosition: {x: 6.96, y: 0.89, z: 0}
-  m_LocalScale: {x: 1.3, y: 1.01, z: 0.878402}
+  m_LocalPosition: {x: 7, y: 0.341, z: 0}
+  m_LocalScale: {x: 0.6973566, y: 0.8178206, z: 0.71126264}
   m_Children:
   - {fileID: 931228125}
   - {fileID: 1882708653}
@@ -1701,7 +1701,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2135972670}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ec0ecec4d948e047b005e3ca41d3ccb, type: 3}
+  m_Script: {fileID: 11500000, guid: 395c8b415ab64f54b8d591a7268d49fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   connectPoint: {fileID: 1328820161}
@@ -1713,7 +1713,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2135972670}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 640c92131a73b4a4895e13f9f3653516, type: 3}
+  m_Script: {fileID: 11500000, guid: a04adc1d447d53a4fbbd2bcbd36eab1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!50 &2135972676
