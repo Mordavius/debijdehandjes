@@ -36,6 +36,9 @@ public abstract class Plant : MonoBehaviour
     {
         Debug.Log("ready()");
     }
+
+    //public void HarvestPlant(Tile){}
+
 }
 
 public class Carrot : Plant
