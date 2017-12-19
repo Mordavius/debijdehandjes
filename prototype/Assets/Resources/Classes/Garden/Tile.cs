@@ -23,10 +23,15 @@ public class Tile : MonoBehaviour
         {
             GetComponent<SpriteRenderer>().sprite = sprite[state];
         }
+        if (state == (int)TileState.raked)
+        {
+            tag = "RakedGround";
+        }
         //TODO: create new gameObject with seed
         if (state == (int)TileState.seeded)
         {
             plant.StartGrowing();
+            GetComponent<SpriteRenderer>().sprite = plant.seedgroundSprite;
         }
     }
 
@@ -39,6 +44,5 @@ public class Tile : MonoBehaviour
     void SeedPlant(Plant newPlant)
     {
         plant = newPlant;
-        Debug.Log(plant.valueOfHarvest);
     }
 }

@@ -19,7 +19,7 @@ public class SeedTouch : MonoBehaviour {
                 break;
             case (int)PlantType.leek:
                 plant = new Vegetables.Leek();
-                this.transform.localScale += new Vector3(.05f, .05f, .05f);
+                this.transform.localScale -= new Vector3(.005f, .005f, .005f);
                 break;
             default:
                 plant = new Vegetables.Carrot();
@@ -41,14 +41,6 @@ public class SeedTouch : MonoBehaviour {
                 Destroy(this.gameObject);
             }
         }
-        if (Input.GetMouseButtonUp(0) && other.gameObject.tag != "RakedGround")
-        {
-            Destroy(this.gameObject);
-        }
-    }
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
         if (Input.GetMouseButtonUp(0) && other.gameObject.tag != "RakedGround")
         {
             Destroy(this.gameObject);

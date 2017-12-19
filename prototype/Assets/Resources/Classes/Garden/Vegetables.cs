@@ -4,26 +4,28 @@ using UnityEngine;
 
 public class Vegetables : Plant {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    // Use this for initialization
+    void Start() {
+
+    }
+
+    // Update is called once per frame
+    void Update() {
+
+    }
 
     public class Carrot : Plant
     {
-       public override PlantType plantType { get { return PlantType.carrot; } }
-       public override float growthMultiplier { get { return 1.1f; } }
+        public override string plantName { get { return "carrot"; } }
+        public override PlantType plantType { get { return PlantType.carrot; } }
+        public override float growthMultiplier { get { return 1.1f; } }
     }
 
     public class Leek : Plant
     {
-       public override int valueOfHarvest { get { return 12; } }
-       public override PlantType plantType { get { return PlantType.leek; } }
-       public override float growthMultiplier { get { return 0.8f; } }
+        public override string plantName { get { return "leek"; } }
+        public override int valueOfHarvest { get { return 12; } }
+        public override PlantType plantType { get { return PlantType.leek; } }
+        public override float growthMultiplier { get { return 0.8f; } }
     }
 }
