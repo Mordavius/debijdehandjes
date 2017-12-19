@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class FlipCards : MonoBehaviour {
-    float speed;
+    public float speed;
+    public bool turnable = false;
 
     void Start()
     {
@@ -14,6 +15,7 @@ public class FlipCards : MonoBehaviour {
         if (this.transform.eulerAngles.y >= 180)
         {
             speed = 0;
+            turnable = true;
         }
         this.transform.Rotate(Vector3.up * speed);
     }
