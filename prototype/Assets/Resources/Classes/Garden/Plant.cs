@@ -4,7 +4,7 @@ using UnityEngine;
 
 public enum PlantType { unknown, carrot, leek }
 
-public abstract class Plant : MonoBehaviour
+public abstract class Plant : ScriptableObject
 {
     public virtual string plantName { get; set; }
     public virtual PlantType plantType { get; set; }
@@ -13,42 +13,43 @@ public abstract class Plant : MonoBehaviour
     public virtual float growthMultiplier { get; set; }
 
     public Tile tilePlantedOn { get; set; }
-    public virtual Sprite plantSprite { get; set; }
-    public virtual Sprite seedgroundSprite { get; set; }
+    public Sprite plantSprite { get; set; }
+    public Sprite grownPlantSprite { get; set; }
+    public Sprite groundSprite { get; set; }
+    public float waterMultiplier { get; set; }
 
-    string path = "Sprites/Garden/Plants/";
+    string path = "Sprites/Garden/";
 
     public Plant()
     {
         plantName = "unknown";
         valueOfHarvest = 10;
         plantType = PlantType.unknown;
-        growthTimeInSeconds = 10 + Random.Range(-1,1);
+        growthTimeInSeconds = 20;
         growthMultiplier = 1;
-        plantSprite = Resources.Load<Sprite>(path + plantName);
-        seedgroundSprite = Resources.Load<Sprite>(path + plantName + "-seeded-ground");
+        waterMultiplier = 1;
+        plantSprite = Resources.Load<Sprite>(path + "Plants/" + plantName);
+        grownPlantSprite = Resources.Load<Sprite>(path + "Plants/" + plantName + "-grown");
+        groundSprite = Resources.Load<Sprite>(path + "dirtPile");
     }
 
-    public void GrowPlant()
+    public void GrowPlant(Tile tilePlantedOn)
     {
         if (growthTimeInSeconds >= 0)
         {
-            growthTimeInSeconds -= Time.deltaTime*growthMultiplier;
+            tilePlantedOn.ChangeSprite(groundSprite);
+            growthTimeInSeconds -= Time.deltaTime*growthMultiplier*waterMultiplier;
+            Debug.Log(growthTimeInSeconds);
         }
         if (growthTimeInSeconds <= 0)
         {
-            Ready();
+            tilePlantedOn.ChangeSprite(grownPlantSprite);
         }
     }
 
     public void GetWatered()
     {
-        growthMultiplier += 0.5f;
-    }
-
-    public void Ready()
-    {
-      
+        waterMultiplier = 2;
     }
 
     //public void HarvestPlant(Tile){}

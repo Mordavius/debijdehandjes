@@ -14,7 +14,7 @@ public class Tile : MonoBehaviour
 
 	void Start () {
         // to make testing easier
-        state = 1;
+        state = 0;
     }
 	
 	void Update () {
@@ -30,8 +30,7 @@ public class Tile : MonoBehaviour
         //TODO: create new gameObject with seed
         if (state == (int)TileState.seeded)
         {
-            plant.GrowPlant();
-            GetComponent<SpriteRenderer>().sprite = plant.seedgroundSprite;
+            plant.GrowPlant(this);
         }
     }
 
@@ -46,9 +45,14 @@ public class Tile : MonoBehaviour
         plant = newPlant;
     }
 
+    public void ChangeSprite(Sprite newSprite)
+    {
+        GetComponent<SpriteRenderer>().sprite = newSprite;
+    }
+
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "WC")
+        if(other.tag == "WC" && state == 2)
         {
             plant.GetWatered();
         }
