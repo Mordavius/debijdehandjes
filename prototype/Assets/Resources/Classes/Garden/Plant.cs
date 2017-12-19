@@ -6,10 +6,12 @@ public enum PlantType { unknown, carrot, leek }
 
 public abstract class Plant : MonoBehaviour
 {
-    public virtual PlantType plantType { get; protected set; }
-    public virtual int valueOfHarvest { get; protected set; }
-    public virtual float growthTimeInSeconds { get; protected set; }
-    public virtual float growthMultiplier { get; protected set; }
+    public virtual PlantType plantType { get; set; }
+    public virtual int valueOfHarvest { get; set; }
+    public virtual float growthTimeInSeconds { get; set; }
+    public virtual float growthMultiplier { get; set; }
+    public Tile tilePlantedOn { get; set; }
+    public Sprite[] plantSprites { get; set; }
 
     public Plant()
     {
@@ -34,22 +36,9 @@ public abstract class Plant : MonoBehaviour
 
     public void Ready()
     {
-        Debug.Log("ready()");
+      
     }
 
     //public void HarvestPlant(Tile){}
 
-}
-
-public class Carrot : Plant
-{
-    public override PlantType plantType { get { return PlantType.carrot; } }
-    public override float growthMultiplier { get { return 1.1f; } }
-}
-
-public class Leek : Plant
-{
-    public override int valueOfHarvest { get { return 12; } }
-    public override PlantType plantType { get { return PlantType.leek; } }
-    public override float growthMultiplier { get { return 0.8f; } }
 }

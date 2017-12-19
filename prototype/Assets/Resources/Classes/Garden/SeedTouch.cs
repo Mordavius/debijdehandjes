@@ -14,15 +14,15 @@ public class SeedTouch : MonoBehaviour {
         switch (plantType)
         {
             case (int)PlantType.carrot:
-                plant = new Carrot();
+                plant = new Vegetables.Carrot();
                 this.transform.localScale -= new Vector3(.005f, .005f, .005f);
                 break;
             case (int)PlantType.leek:
-                plant = new Leek();
+                plant = new Vegetables.Leek();
                 this.transform.localScale += new Vector3(.05f, .05f, .05f);
                 break;
             default:
-                plant = new Carrot();
+                plant = new Vegetables.Carrot();
                 this.transform.localScale -= new Vector3(.005f, .005f, .005f);
                 break;
         }

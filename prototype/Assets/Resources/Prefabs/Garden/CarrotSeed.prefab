@@ -97,9 +97,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1784466749381060}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 640c92131a73b4a4895e13f9f3653516, type: 3}
+  m_Script: {fileID: 11500000, guid: a04adc1d447d53a4fbbd2bcbd36eab1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDragged: 0
 --- !u!114 &114311367628107902
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -108,14 +109,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1784466749381060}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a1ecfb57436d6643afb856ae9873f05, type: 3}
+  m_Script: {fileID: 11500000, guid: e3740fe589ec38e45bd965118ebb255b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   plantType: 0
+  plant: {fileID: 0}
   sprite:
   - {fileID: 0}
-  - {fileID: 21300000, guid: 5b921917f052f524da528e6dd97b4961, type: 3}
-  - {fileID: 21300000, guid: 8f15241aa2a2e464e8ca6fbf0a96b79e, type: 3}
+  - {fileID: 21300000, guid: 0d86eeb08d10e484ea045c4ad61a4104, type: 3}
+  - {fileID: 21300000, guid: 362cb9f42decf924384d3a9640c653f7, type: 3}
 --- !u!212 &212058287245595970
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -125,7 +127,6 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -141,7 +142,6 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5

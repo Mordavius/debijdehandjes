@@ -172,17 +172,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 80176363}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1532771ff2ec4e41a35cf35ffbfdc32, type: 3}
+  m_Script: {fileID: 11500000, guid: 7861ae68619ff8a49b458df181f0c84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-  growth: 10
-  growthMultiplier: 0
-  score: 0
   sprite:
   - {fileID: 0}
   - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
+  - {fileID: 21300000, guid: 0f87ce462a01ca84abefbb1334930050, type: 3}
+  - {fileID: 21300000, guid: 0a6358bc458233d4aab2808c0136a1db, type: 3}
 --- !u!212 &80176367
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -289,17 +288,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 114924853}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1532771ff2ec4e41a35cf35ffbfdc32, type: 3}
+  m_Script: {fileID: 11500000, guid: 7861ae68619ff8a49b458df181f0c84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-  growth: 10
-  growthMultiplier: 0
-  score: 0
   sprite:
   - {fileID: 0}
   - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
+  - {fileID: 21300000, guid: 0f87ce462a01ca84abefbb1334930050, type: 3}
+  - {fileID: 21300000, guid: 0a6358bc458233d4aab2808c0136a1db, type: 3}
 --- !u!212 &114924857
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -406,17 +404,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 123318120}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1532771ff2ec4e41a35cf35ffbfdc32, type: 3}
+  m_Script: {fileID: 11500000, guid: 7861ae68619ff8a49b458df181f0c84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-  growth: 10
-  growthMultiplier: 0
-  score: 0
   sprite:
   - {fileID: 0}
   - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
+  - {fileID: 21300000, guid: 0f87ce462a01ca84abefbb1334930050, type: 3}
+  - {fileID: 21300000, guid: 0a6358bc458233d4aab2808c0136a1db, type: 3}
 --- !u!212 &123318124
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -523,17 +520,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 150929910}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1532771ff2ec4e41a35cf35ffbfdc32, type: 3}
+  m_Script: {fileID: 11500000, guid: 7861ae68619ff8a49b458df181f0c84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-  growth: 10
-  growthMultiplier: 0
-  score: 0
   sprite:
   - {fileID: 0}
   - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
+  - {fileID: 21300000, guid: 0f87ce462a01ca84abefbb1334930050, type: 3}
+  - {fileID: 21300000, guid: 0a6358bc458233d4aab2808c0136a1db, type: 3}
 --- !u!212 &150929914
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -640,17 +636,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 162246098}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1532771ff2ec4e41a35cf35ffbfdc32, type: 3}
+  m_Script: {fileID: 11500000, guid: 7861ae68619ff8a49b458df181f0c84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-  growth: 10
-  growthMultiplier: 0
-  score: 0
   sprite:
   - {fileID: 0}
   - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
+  - {fileID: 21300000, guid: 0f87ce462a01ca84abefbb1334930050, type: 3}
+  - {fileID: 21300000, guid: 0a6358bc458233d4aab2808c0136a1db, type: 3}
 --- !u!212 &162246102
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -757,17 +752,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 201296724}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1532771ff2ec4e41a35cf35ffbfdc32, type: 3}
+  m_Script: {fileID: 11500000, guid: 7861ae68619ff8a49b458df181f0c84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-  growth: 10
-  growthMultiplier: 0
-  score: 0
   sprite:
   - {fileID: 0}
   - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
+  - {fileID: 21300000, guid: 0f87ce462a01ca84abefbb1334930050, type: 3}
+  - {fileID: 21300000, guid: 0a6358bc458233d4aab2808c0136a1db, type: 3}
 --- !u!212 &201296728
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -892,10 +886,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 207512909}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e62638711e963da4dae8caa3b2ed942f, type: 3}
+  m_Script: {fileID: 11500000, guid: 072e78831efd3ee4ab55e563dee561c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seed: {fileID: 1784466749381060, guid: 5e99aabb8fae0a9449ab31b8848f0f01, type: 2}
+  seed: {fileID: 0}
   plantType: 1
 --- !u!61 &207512913
 BoxCollider2D:
@@ -1006,17 +1000,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 335297395}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1532771ff2ec4e41a35cf35ffbfdc32, type: 3}
+  m_Script: {fileID: 11500000, guid: 7861ae68619ff8a49b458df181f0c84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-  growth: 10
-  growthMultiplier: 0
-  score: 0
   sprite:
   - {fileID: 0}
   - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
+  - {fileID: 21300000, guid: 0f87ce462a01ca84abefbb1334930050, type: 3}
+  - {fileID: 21300000, guid: 0a6358bc458233d4aab2808c0136a1db, type: 3}
 --- !u!212 &335297399
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1123,17 +1116,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 347782975}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1532771ff2ec4e41a35cf35ffbfdc32, type: 3}
+  m_Script: {fileID: 11500000, guid: 7861ae68619ff8a49b458df181f0c84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-  growth: 10
-  growthMultiplier: 0
-  score: 0
   sprite:
   - {fileID: 0}
   - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
+  - {fileID: 21300000, guid: 0f87ce462a01ca84abefbb1334930050, type: 3}
+  - {fileID: 21300000, guid: 0a6358bc458233d4aab2808c0136a1db, type: 3}
 --- !u!212 &347782979
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1240,17 +1232,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 358754199}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1532771ff2ec4e41a35cf35ffbfdc32, type: 3}
+  m_Script: {fileID: 11500000, guid: 7861ae68619ff8a49b458df181f0c84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-  growth: 10
-  growthMultiplier: 0
-  score: 0
   sprite:
   - {fileID: 0}
   - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
+  - {fileID: 21300000, guid: 0f87ce462a01ca84abefbb1334930050, type: 3}
+  - {fileID: 21300000, guid: 0a6358bc458233d4aab2808c0136a1db, type: 3}
 --- !u!212 &358754203
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1357,17 +1348,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 377663525}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1532771ff2ec4e41a35cf35ffbfdc32, type: 3}
+  m_Script: {fileID: 11500000, guid: 7861ae68619ff8a49b458df181f0c84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-  growth: 10
-  growthMultiplier: 0
-  score: 0
   sprite:
   - {fileID: 0}
   - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
+  - {fileID: 21300000, guid: 0f87ce462a01ca84abefbb1334930050, type: 3}
+  - {fileID: 21300000, guid: 0a6358bc458233d4aab2808c0136a1db, type: 3}
 --- !u!212 &377663529
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1474,17 +1464,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 409670564}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1532771ff2ec4e41a35cf35ffbfdc32, type: 3}
+  m_Script: {fileID: 11500000, guid: 7861ae68619ff8a49b458df181f0c84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-  growth: 10
-  growthMultiplier: 0
-  score: 0
   sprite:
   - {fileID: 0}
   - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
+  - {fileID: 21300000, guid: 0f87ce462a01ca84abefbb1334930050, type: 3}
+  - {fileID: 21300000, guid: 0a6358bc458233d4aab2808c0136a1db, type: 3}
 --- !u!212 &409670568
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1591,17 +1580,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 453112722}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1532771ff2ec4e41a35cf35ffbfdc32, type: 3}
+  m_Script: {fileID: 11500000, guid: 7861ae68619ff8a49b458df181f0c84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-  growth: 10
-  growthMultiplier: 0
-  score: 0
   sprite:
   - {fileID: 0}
   - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
+  - {fileID: 21300000, guid: 0f87ce462a01ca84abefbb1334930050, type: 3}
+  - {fileID: 21300000, guid: 0a6358bc458233d4aab2808c0136a1db, type: 3}
 --- !u!212 &453112726
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1708,17 +1696,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 511225840}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1532771ff2ec4e41a35cf35ffbfdc32, type: 3}
+  m_Script: {fileID: 11500000, guid: 7861ae68619ff8a49b458df181f0c84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-  growth: 10
-  growthMultiplier: 0
-  score: 0
   sprite:
   - {fileID: 0}
   - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
+  - {fileID: 21300000, guid: 0f87ce462a01ca84abefbb1334930050, type: 3}
+  - {fileID: 21300000, guid: 0a6358bc458233d4aab2808c0136a1db, type: 3}
 --- !u!212 &511225844
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1788,15 +1775,14 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1208080966}
+  m_Children: []
   m_Father: {fileID: 833793813}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -314.8, y: -176.4}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -335, y: 170}
+  m_SizeDelta: {x: 107.5, y: 80.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &563636344
 MonoBehaviour:
@@ -1869,8 +1855,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 1787ec961c3c4964191263e25322d0b4, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2018,17 +2004,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 800898043}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1532771ff2ec4e41a35cf35ffbfdc32, type: 3}
+  m_Script: {fileID: 11500000, guid: 7861ae68619ff8a49b458df181f0c84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-  growth: 10
-  growthMultiplier: 0
-  score: 0
   sprite:
   - {fileID: 0}
   - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
+  - {fileID: 21300000, guid: 0f87ce462a01ca84abefbb1334930050, type: 3}
+  - {fileID: 21300000, guid: 0a6358bc458233d4aab2808c0136a1db, type: 3}
 --- !u!212 &800898047
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2135,17 +2120,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 832906133}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1532771ff2ec4e41a35cf35ffbfdc32, type: 3}
+  m_Script: {fileID: 11500000, guid: 7861ae68619ff8a49b458df181f0c84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-  growth: 10
-  growthMultiplier: 0
-  score: 0
   sprite:
   - {fileID: 0}
   - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
+  - {fileID: 21300000, guid: 0f87ce462a01ca84abefbb1334930050, type: 3}
+  - {fileID: 21300000, guid: 0a6358bc458233d4aab2808c0136a1db, type: 3}
 --- !u!212 &832906137
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2303,6 +2287,9 @@ GameObject:
   m_Component:
   - component: {fileID: 918960251}
   - component: {fileID: 918960250}
+  - component: {fileID: 918960254}
+  - component: {fileID: 918960253}
+  - component: {fileID: 918960252}
   m_Layer: 0
   m_Name: WateringCan
   m_TagString: Untagged
@@ -2359,12 +2346,69 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 918960249}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.61, y: 3.75, z: 0}
+  m_LocalPosition: {x: 2.61, y: 3.75, z: -2}
   m_LocalScale: {x: 0.11805455, y: 0.11805455, z: 0.11805455}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &918960252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 918960249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a04adc1d447d53a4fbbd2bcbd36eab1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDragged: 0
+--- !u!61 &918960253
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 918960249}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 19.2, y: 10.79}
+    newSize: {x: 19.2, y: 10.79}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 19.2, y: 10.79}
+  m_EdgeRadius: 0
+--- !u!50 &918960254
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 918960249}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1023928250
 GameObject:
   m_ObjectHideFlags: 0
@@ -2429,17 +2473,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1023928250}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1532771ff2ec4e41a35cf35ffbfdc32, type: 3}
+  m_Script: {fileID: 11500000, guid: 7861ae68619ff8a49b458df181f0c84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-  growth: 10
-  growthMultiplier: 0
-  score: 0
   sprite:
   - {fileID: 0}
   - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
+  - {fileID: 21300000, guid: 0f87ce462a01ca84abefbb1334930050, type: 3}
+  - {fileID: 21300000, guid: 0a6358bc458233d4aab2808c0136a1db, type: 3}
 --- !u!212 &1023928254
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2546,17 +2589,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1170629897}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1532771ff2ec4e41a35cf35ffbfdc32, type: 3}
+  m_Script: {fileID: 11500000, guid: 7861ae68619ff8a49b458df181f0c84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-  growth: 10
-  growthMultiplier: 0
-  score: 0
   sprite:
   - {fileID: 0}
   - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
+  - {fileID: 21300000, guid: 0f87ce462a01ca84abefbb1334930050, type: 3}
+  - {fileID: 21300000, guid: 0a6358bc458233d4aab2808c0136a1db, type: 3}
 --- !u!212 &1170629901
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2599,80 +2641,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
---- !u!1 &1208080965
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1208080966}
-  - component: {fileID: 1208080968}
-  - component: {fileID: 1208080967}
-  m_Layer: 0
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1208080966
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1208080965}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 563636343}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1208080967
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1208080965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Hoofdmenu
---- !u!222 &1208080968
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1208080965}
 --- !u!1 &1232932001
 GameObject:
   m_ObjectHideFlags: 0
@@ -2737,17 +2705,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1232932001}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1532771ff2ec4e41a35cf35ffbfdc32, type: 3}
+  m_Script: {fileID: 11500000, guid: 7861ae68619ff8a49b458df181f0c84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-  growth: 10
-  growthMultiplier: 0
-  score: 0
   sprite:
   - {fileID: 0}
   - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
+  - {fileID: 21300000, guid: 0f87ce462a01ca84abefbb1334930050, type: 3}
+  - {fileID: 21300000, guid: 0a6358bc458233d4aab2808c0136a1db, type: 3}
 --- !u!212 &1232932005
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2854,17 +2821,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1293752964}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1532771ff2ec4e41a35cf35ffbfdc32, type: 3}
+  m_Script: {fileID: 11500000, guid: 7861ae68619ff8a49b458df181f0c84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-  growth: 10
-  growthMultiplier: 0
-  score: 0
   sprite:
   - {fileID: 0}
   - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
+  - {fileID: 21300000, guid: 0f87ce462a01ca84abefbb1334930050, type: 3}
+  - {fileID: 21300000, guid: 0a6358bc458233d4aab2808c0136a1db, type: 3}
 --- !u!212 &1293752968
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2971,17 +2937,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1388871555}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1532771ff2ec4e41a35cf35ffbfdc32, type: 3}
+  m_Script: {fileID: 11500000, guid: 7861ae68619ff8a49b458df181f0c84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-  growth: 10
-  growthMultiplier: 0
-  score: 0
   sprite:
   - {fileID: 0}
   - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
+  - {fileID: 21300000, guid: 0f87ce462a01ca84abefbb1334930050, type: 3}
+  - {fileID: 21300000, guid: 0a6358bc458233d4aab2808c0136a1db, type: 3}
 --- !u!212 &1388871559
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3088,17 +3053,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1454667618}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1532771ff2ec4e41a35cf35ffbfdc32, type: 3}
+  m_Script: {fileID: 11500000, guid: 7861ae68619ff8a49b458df181f0c84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-  growth: 10
-  growthMultiplier: 0
-  score: 0
   sprite:
   - {fileID: 0}
   - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
+  - {fileID: 21300000, guid: 0f87ce462a01ca84abefbb1334930050, type: 3}
+  - {fileID: 21300000, guid: 0a6358bc458233d4aab2808c0136a1db, type: 3}
 --- !u!212 &1454667622
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3205,17 +3169,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1483616371}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1532771ff2ec4e41a35cf35ffbfdc32, type: 3}
+  m_Script: {fileID: 11500000, guid: 7861ae68619ff8a49b458df181f0c84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-  growth: 10
-  growthMultiplier: 0
-  score: 0
   sprite:
   - {fileID: 0}
   - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
+  - {fileID: 21300000, guid: 0f87ce462a01ca84abefbb1334930050, type: 3}
+  - {fileID: 21300000, guid: 0a6358bc458233d4aab2808c0136a1db, type: 3}
 --- !u!212 &1483616375
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3322,17 +3285,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1494543830}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1532771ff2ec4e41a35cf35ffbfdc32, type: 3}
+  m_Script: {fileID: 11500000, guid: 7861ae68619ff8a49b458df181f0c84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-  growth: 10
-  growthMultiplier: 0
-  score: 0
   sprite:
   - {fileID: 0}
   - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
+  - {fileID: 21300000, guid: 0f87ce462a01ca84abefbb1334930050, type: 3}
+  - {fileID: 21300000, guid: 0a6358bc458233d4aab2808c0136a1db, type: 3}
 --- !u!212 &1494543834
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3532,17 +3494,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1597829467}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1532771ff2ec4e41a35cf35ffbfdc32, type: 3}
+  m_Script: {fileID: 11500000, guid: 7861ae68619ff8a49b458df181f0c84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-  growth: 10
-  growthMultiplier: 0
-  score: 0
   sprite:
   - {fileID: 0}
   - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
+  - {fileID: 21300000, guid: 0f87ce462a01ca84abefbb1334930050, type: 3}
+  - {fileID: 21300000, guid: 0a6358bc458233d4aab2808c0136a1db, type: 3}
 --- !u!212 &1597829471
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3709,17 +3670,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1718560546}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1532771ff2ec4e41a35cf35ffbfdc32, type: 3}
+  m_Script: {fileID: 11500000, guid: 7861ae68619ff8a49b458df181f0c84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-  growth: 10
-  growthMultiplier: 0
-  score: 0
   sprite:
   - {fileID: 0}
   - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
+  - {fileID: 21300000, guid: 0f87ce462a01ca84abefbb1334930050, type: 3}
+  - {fileID: 21300000, guid: 0a6358bc458233d4aab2808c0136a1db, type: 3}
 --- !u!212 &1718560550
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3826,17 +3786,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1774773181}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1532771ff2ec4e41a35cf35ffbfdc32, type: 3}
+  m_Script: {fileID: 11500000, guid: 7861ae68619ff8a49b458df181f0c84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-  growth: 10
-  growthMultiplier: 0
-  score: 0
   sprite:
   - {fileID: 0}
   - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
+  - {fileID: 21300000, guid: 0f87ce462a01ca84abefbb1334930050, type: 3}
+  - {fileID: 21300000, guid: 0a6358bc458233d4aab2808c0136a1db, type: 3}
 --- !u!212 &1774773185
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3943,17 +3902,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1838755077}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1532771ff2ec4e41a35cf35ffbfdc32, type: 3}
+  m_Script: {fileID: 11500000, guid: 7861ae68619ff8a49b458df181f0c84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-  growth: 10
-  growthMultiplier: 0
-  score: 0
   sprite:
   - {fileID: 0}
   - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
+  - {fileID: 21300000, guid: 0f87ce462a01ca84abefbb1334930050, type: 3}
+  - {fileID: 21300000, guid: 0a6358bc458233d4aab2808c0136a1db, type: 3}
 --- !u!212 &1838755081
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4122,17 +4080,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1881398157}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1532771ff2ec4e41a35cf35ffbfdc32, type: 3}
+  m_Script: {fileID: 11500000, guid: 7861ae68619ff8a49b458df181f0c84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-  growth: 10
-  growthMultiplier: 0
-  score: 0
   sprite:
   - {fileID: 0}
   - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
+  - {fileID: 21300000, guid: 0f87ce462a01ca84abefbb1334930050, type: 3}
+  - {fileID: 21300000, guid: 0a6358bc458233d4aab2808c0136a1db, type: 3}
 --- !u!212 &1881398161
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4227,10 +4184,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1915504959}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e62638711e963da4dae8caa3b2ed942f, type: 3}
+  m_Script: {fileID: 11500000, guid: 072e78831efd3ee4ab55e563dee561c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seed: {fileID: 1784466749381060, guid: 5e99aabb8fae0a9449ab31b8848f0f01, type: 2}
+  seed: {fileID: 0}
   plantType: 2
 --- !u!50 &1915504962
 Rigidbody2D:
@@ -4371,17 +4328,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1998407507}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1532771ff2ec4e41a35cf35ffbfdc32, type: 3}
+  m_Script: {fileID: 11500000, guid: 7861ae68619ff8a49b458df181f0c84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-  growth: 10
-  growthMultiplier: 0
-  score: 0
   sprite:
   - {fileID: 0}
   - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
+  - {fileID: 21300000, guid: 0f87ce462a01ca84abefbb1334930050, type: 3}
+  - {fileID: 21300000, guid: 0a6358bc458233d4aab2808c0136a1db, type: 3}
 --- !u!212 &1998407511
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4488,17 +4444,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 2064393529}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1532771ff2ec4e41a35cf35ffbfdc32, type: 3}
+  m_Script: {fileID: 11500000, guid: 7861ae68619ff8a49b458df181f0c84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-  growth: 10
-  growthMultiplier: 0
-  score: 0
   sprite:
   - {fileID: 0}
   - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
+  - {fileID: 21300000, guid: 0f87ce462a01ca84abefbb1334930050, type: 3}
+  - {fileID: 21300000, guid: 0a6358bc458233d4aab2808c0136a1db, type: 3}
 --- !u!212 &2064393533
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4605,17 +4560,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 2094793489}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1532771ff2ec4e41a35cf35ffbfdc32, type: 3}
+  m_Script: {fileID: 11500000, guid: 7861ae68619ff8a49b458df181f0c84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-  growth: 10
-  growthMultiplier: 0
-  score: 0
   sprite:
   - {fileID: 0}
   - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
+  - {fileID: 21300000, guid: 0f87ce462a01ca84abefbb1334930050, type: 3}
+  - {fileID: 21300000, guid: 0a6358bc458233d4aab2808c0136a1db, type: 3}
 --- !u!212 &2094793493
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4722,17 +4676,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 2122707502}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1532771ff2ec4e41a35cf35ffbfdc32, type: 3}
+  m_Script: {fileID: 11500000, guid: 7861ae68619ff8a49b458df181f0c84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-  growth: 10
-  growthMultiplier: 0
-  score: 0
   sprite:
   - {fileID: 0}
   - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
+  - {fileID: 21300000, guid: 0f87ce462a01ca84abefbb1334930050, type: 3}
+  - {fileID: 21300000, guid: 0a6358bc458233d4aab2808c0136a1db, type: 3}
 --- !u!212 &2122707506
 SpriteRenderer:
   m_ObjectHideFlags: 0
