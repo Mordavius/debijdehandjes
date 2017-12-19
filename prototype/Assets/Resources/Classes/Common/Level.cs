@@ -4,14 +4,38 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public abstract class Level : MonoBehaviour {
-    GameObject bg;
+    /*GameObject bg;
     AudioSource GMAudio;
     AudioSource audioHandler;
     AudioClip bgm;
     AudioClip audioFeedback;
+    */
+    public int score;
 
 
-    public virtual void Start()
+    /*public bool IsFirstTimePlayed()
+    {
+
+    }*/
+
+    /*private int GetSavedScore()
+    {
+
+    }*/
+
+    /*public void StartTimer()
+    {
+
+    }*/
+
+   /* public float TimeDuration()
+    {
+
+    }
+    */
+   
+    /* use when neeeded
+     public virtual void Start()
     {
         audioFeedback = Resources.Load<AudioClip>("Audio/prototype3/" + SceneManager.GetActiveScene().name + "Feedback");
         bgm = Resources.Load<AudioClip>("Audio/prototype3/" + SceneManager.GetActiveScene().name + "BGM");
@@ -35,4 +59,5 @@ public abstract class Level : MonoBehaviour {
         audioHandler.Play();
         audioHandler.loop = looping;
     }
+    */
 }
