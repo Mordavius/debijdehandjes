@@ -34,10 +34,10 @@ public abstract class Level : MonoBehaviour {
     }
     */
    
-    /* use when neeeded
+    //use when neeeded
      public virtual void Start()
     {
-        audioFeedback = Resources.Load<AudioClip>("Audio/prototype3/" + SceneManager.GetActiveScene().name + "Feedback");
+        /*audioFeedback = Resources.Load<AudioClip>("Audio/prototype3/" + SceneManager.GetActiveScene().name + "Feedback");
         bgm = Resources.Load<AudioClip>("Audio/prototype3/" + SceneManager.GetActiveScene().name + "BGM");
 
         bg = GameObject.Find("Background");
@@ -46,10 +46,10 @@ public abstract class Level : MonoBehaviour {
         GMAudio = GameObject.Find("GM").GetComponent<AudioSource>();
         Instantiate(Resources.Load("Sprites/prototype3/" + SceneManager.GetActiveScene().name + "Background"),bg.transform.position, bg.transform.rotation);
         audioHandler.clip = bgm;
-        GMAudio.clip = audioFeedback;
+        GMAudio.clip = audioFeedback;*/
         
     }
-
+    /*
     public virtual void PlayFeedback()
     {
         GMAudio.Play();
