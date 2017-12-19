@@ -29,16 +29,21 @@ public abstract class Plant : MonoBehaviour
         seedgroundSprite = Resources.Load<Sprite>(path + plantName + "-seeded-ground");
     }
 
-    public void StartGrowing()
+    public void GrowPlant()
     {
         if (growthTimeInSeconds >= 0)
         {
-            growthTimeInSeconds -= Time.deltaTime;
+            growthTimeInSeconds -= Time.deltaTime*growthMultiplier;
         }
         if (growthTimeInSeconds <= 0)
         {
             Ready();
         }
+    }
+
+    public void GetWatered()
+    {
+        growthMultiplier += 0.5f;
     }
 
     public void Ready()
