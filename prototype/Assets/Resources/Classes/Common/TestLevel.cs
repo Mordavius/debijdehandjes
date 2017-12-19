@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TestLevel : Level {
 
-    public override void Start()
+    /*public override void Start()
     {
         base.Start();
         PlayBackground(true);
@@ -16,7 +16,7 @@ public class TestLevel : Level {
         {
             PlayFeedback();
         }
-    }
+    }*/
 
 
 }

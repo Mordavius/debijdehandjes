@@ -14,20 +14,23 @@ public class PairCards : MonoBehaviour {
 
     GameObject[] cards;
     bool touching = false;
+    bool turnable;
+    bool turnable2;
 
-	void Update () {
+    void Update () {
         int touches = Input.touchCount;
         if (touches == 1 || touches == 2)
         {
             touch = Input.GetTouch(0);
             hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(touch.position), Vector2.zero);
+            turnable = hit.collider.gameObject.GetComponent<FlipCards>().turnable;
 
-            if (touch.phase == TouchPhase.Began)
+            if (touch.phase == TouchPhase.Began && turnable)
             {
                 hit.transform.eulerAngles = new Vector3(0, 0, 0);
                 touching = true;
             }
-            if (touch.phase == TouchPhase.Ended)
+            if (touch.phase == TouchPhase.Ended && turnable)
             {
                 hit.transform.eulerAngles = new Vector3(0, 180, 0);
                 touching = false;
@@ -36,11 +39,13 @@ public class PairCards : MonoBehaviour {
             {
                 touch2 = Input.GetTouch(1);
                 hit2 = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(touch2.position), Vector2.zero);
-                if (touch2.phase == TouchPhase.Began)
+                turnable2 = hit2.collider.gameObject.GetComponent<FlipCards>().turnable;
+
+                if (touch2.phase == TouchPhase.Began && turnable2)
                 {
                     hit2.transform.eulerAngles = new Vector3(0, 0, 0);
                 }
-                if (touch2.phase == TouchPhase.Ended)
+                if (touch2.phase == TouchPhase.Ended && turnable2)
                 {
                     hit2.transform.eulerAngles = new Vector3(0, 180, 0);
                     touching = false;
@@ -57,10 +62,13 @@ public class PairCards : MonoBehaviour {
         {
             foreach (GameObject card in cards)
             {
-                card.transform.eulerAngles = new Vector3(0, 180, 0);
+                if (card.transform.parent.GetComponent<FlipCards>().turnable)
+                {
+                    card.transform.parent.eulerAngles = new Vector3(0, 180, 0);
+                }
             }
         }
-        Debug.Log(cards);
+        Debug.Log(touches);
 
         if(cards.Length <= 0)
         {
