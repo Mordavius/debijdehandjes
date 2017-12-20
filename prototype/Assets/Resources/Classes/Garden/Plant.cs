@@ -27,7 +27,7 @@ public abstract class Plant : ScriptableObject
         plantName = "unknown";
         valueOfHarvest = 10;
         plantType = PlantType.unknown;
-        growthTimeInSeconds = 20;
+        growthTimeInSeconds = 1;
         growthMultiplier = 1;
         waterMultiplier = 1;
         plantSprite = Resources.Load<Sprite>(path + "Plants/" + plantName);
