@@ -13,7 +13,7 @@ public class ScoreHarvest : MonoBehaviour {
     {
         if (other.tag != "Seed")
         {
-
+            plant = other.GetComponent<DraggingVegetable>().plant;
             scoreCount += plant.valueOfHarvest;
             scoreText.text = scoreCount.ToString();
             Destroy(other.gameObject);

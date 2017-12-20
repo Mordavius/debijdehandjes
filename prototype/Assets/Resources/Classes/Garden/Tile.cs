@@ -67,6 +67,7 @@ public class Tile : MonoBehaviour
         {
             currentVegetable = Instantiate(dragVegetable, Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 2)), new Quaternion(0, 0, 0, 0));
             currentVegetable.GetComponent<SpriteRenderer>().sprite = plant.plantSprite;
+            currentVegetable.GetComponent<DraggingVegetable>().plant = plant;
             state = 0;
             plant = null;
             plantType = 0;
