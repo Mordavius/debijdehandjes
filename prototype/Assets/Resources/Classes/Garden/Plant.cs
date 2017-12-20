@@ -30,7 +30,7 @@ public abstract class Plant : ScriptableObject
         waterMultiplier = 1;
         plantSprite = Resources.Load<Sprite>(path + "Plants/" + plantName);
         grownPlantSprite = Resources.Load<Sprite>(path + "Plants/" + plantName + "-grown");
-        groundSprite = Resources.Load<Sprite>(path + "dirtPile");
+        groundSprite = Resources.Load<Sprite>(path + plantName + "-dirtPile");
     }
 
     public void GrowPlant(Tile tilePlantedOn)
