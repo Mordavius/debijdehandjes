@@ -18,6 +18,8 @@ public abstract class Plant : ScriptableObject
     public Sprite groundSprite { get; set; }
     public float waterMultiplier { get; set; }
 
+    public bool ready = false;
+
     string path = "Sprites/Garden/";
 
     public Plant()
@@ -43,6 +45,7 @@ public abstract class Plant : ScriptableObject
         if (growthTimeInSeconds <= 0)
         {
             tilePlantedOn.ChangeSprite(grownPlantSprite);
+            ready = true;
         }
     }
 

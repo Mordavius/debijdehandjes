@@ -12,7 +12,10 @@ public class Tile : MonoBehaviour
 
     public Sprite[] sprite;
 
-	void Start () {
+    private GameObject currentVegetable;
+    public GameObject dragVegetable;
+
+    void Start () {
         // to make testing easier
         state = 1;
     }
@@ -27,7 +30,6 @@ public class Tile : MonoBehaviour
         {
             tag = "RakedGround";
         }
-        //TODO: create new gameObject with seed
         if (state == (int)TileState.seeded)
         {
             plant.GrowPlant(this);
@@ -56,5 +58,22 @@ public class Tile : MonoBehaviour
         {
             plant.GetWatered();
         }
+    }
+
+    void OnMouseDown()
+    {
+        if (plant.ready && state == (int)TileState.seeded)
+        {
+            currentVegetable = Instantiate(dragVegetable, Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 2)), new Quaternion(0, 0, 0, 0));
+            currentVegetable.GetComponent<SpriteRenderer>().sprite = plant.plantSprite;
+            state = 0;
+        }
+    }
+
+    void OnMouseDrag()
+    {
+        Vector3 cursorScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 2);
+        Vector3 cursorPosition = Camera.main.ScreenToWorldPoint(cursorScreenPoint);
+        currentVegetable.transform.position = cursorPosition;
     }
 }
