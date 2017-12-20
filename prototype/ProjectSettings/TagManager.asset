@@ -22,6 +22,7 @@ TagManager:
   - leek
   - card
   - ReekStalk
+  - score
   layers:
   - Default
   - TransparentFX
