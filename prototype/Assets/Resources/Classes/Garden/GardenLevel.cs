@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoestuinTouch : MonoBehaviour
+public class GardenLevel : MonoBehaviour
 {
     // Update is called once per frame
     void Update()
