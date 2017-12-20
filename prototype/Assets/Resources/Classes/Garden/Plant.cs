@@ -39,7 +39,6 @@ public abstract class Plant : ScriptableObject
         {
             tilePlantedOn.ChangeSprite(groundSprite);
             growthTimeInSeconds -= Time.deltaTime*growthMultiplier*waterMultiplier;
-            Debug.Log(growthTimeInSeconds);
         }
         if (growthTimeInSeconds <= 0)
         {

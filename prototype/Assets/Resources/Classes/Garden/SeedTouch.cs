@@ -46,4 +46,13 @@ public class SeedTouch : MonoBehaviour {
             Destroy(this.gameObject);
         }
     }
+
+    void Update()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, -Vector2.up);
+        if (hit.collider.tag != "RakedGround" && Input.GetMouseButtonUp(0))
+        {
+            Destroy(this.gameObject);
+        }
+    }
 }
