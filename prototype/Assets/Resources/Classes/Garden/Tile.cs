@@ -10,7 +10,7 @@ public class Tile : MonoBehaviour
     public int state;
     public int plantType;
 
-    public Sprite[] sprite;
+    public Sprite sprite;
 
     private GameObject currentVegetable;
     public GameObject dragVegetable;
@@ -22,13 +22,14 @@ public class Tile : MonoBehaviour
 	
 	void Update () {
         // check for state, if 2 it means seeds are on it
-        if (state == (int)TileState.blank || state == (int)TileState.raked)
+        if (state == (int)TileState.blank)
         {
-            GetComponent<SpriteRenderer>().sprite = sprite[state];
+            GetComponent<SpriteRenderer>().sprite = null;
         }
         if (state == (int)TileState.raked)
         {
             tag = "RakedGround";
+            GetComponent<SpriteRenderer>().sprite = sprite;
         }
         if (state == (int)TileState.seeded)
         {
@@ -67,6 +68,8 @@ public class Tile : MonoBehaviour
             currentVegetable = Instantiate(dragVegetable, Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 2)), new Quaternion(0, 0, 0, 0));
             currentVegetable.GetComponent<SpriteRenderer>().sprite = plant.plantSprite;
             state = 0;
+            plant = null;
+            plantType = 0;
         }
     }
 
