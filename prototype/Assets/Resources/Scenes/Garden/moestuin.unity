@@ -181,15 +181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-<<<<<<< HEAD
-  sprite:
-  - {fileID: 0}
-  - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-=======
   sprite: {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
->>>>>>> ac4f11a1ae6197efc7c6aedda4e9fa8ddf592be6
   dragVegetable: {fileID: 1755922747745162, guid: 238d96923408d344aa79c5fe44193667,
     type: 2}
 --- !u!212 &80176367
@@ -305,15 +297,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-<<<<<<< HEAD
-  sprite:
-  - {fileID: 0}
-  - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-=======
   sprite: {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
->>>>>>> ac4f11a1ae6197efc7c6aedda4e9fa8ddf592be6
   dragVegetable: {fileID: 1755922747745162, guid: 238d96923408d344aa79c5fe44193667,
     type: 2}
 --- !u!212 &114924857
@@ -429,15 +413,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-<<<<<<< HEAD
-  sprite:
-  - {fileID: 0}
-  - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-=======
   sprite: {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
->>>>>>> ac4f11a1ae6197efc7c6aedda4e9fa8ddf592be6
   dragVegetable: {fileID: 1755922747745162, guid: 238d96923408d344aa79c5fe44193667,
     type: 2}
 --- !u!212 &123318124
@@ -553,15 +529,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-<<<<<<< HEAD
-  sprite:
-  - {fileID: 0}
-  - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-=======
   sprite: {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
->>>>>>> ac4f11a1ae6197efc7c6aedda4e9fa8ddf592be6
   dragVegetable: {fileID: 1755922747745162, guid: 238d96923408d344aa79c5fe44193667,
     type: 2}
 --- !u!212 &150929914
@@ -677,15 +645,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-<<<<<<< HEAD
-  sprite:
-  - {fileID: 0}
-  - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-=======
   sprite: {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
->>>>>>> ac4f11a1ae6197efc7c6aedda4e9fa8ddf592be6
   dragVegetable: {fileID: 1755922747745162, guid: 238d96923408d344aa79c5fe44193667,
     type: 2}
 --- !u!212 &162246102
@@ -801,15 +761,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-<<<<<<< HEAD
-  sprite:
-  - {fileID: 0}
-  - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-=======
   sprite: {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
->>>>>>> ac4f11a1ae6197efc7c6aedda4e9fa8ddf592be6
   dragVegetable: {fileID: 1755922747745162, guid: 238d96923408d344aa79c5fe44193667,
     type: 2}
 --- !u!212 &201296728
@@ -926,13 +878,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 207512909}
   m_LocalRotation: {x: -0, y: -0, z: 0.4524495, w: 0.89179003}
-<<<<<<< HEAD
-  m_LocalPosition: {x: -2.47, y: 3.75, z: -0.03}
-  m_LocalScale: {x: 0.82210505, y: 0.72893476, z: 0.8408892}
-=======
   m_LocalPosition: {x: -2.412, y: 3.709, z: -0.03}
   m_LocalScale: {x: 0.8270588, y: 0.7333271, z: 0.84595615}
->>>>>>> ac4f11a1ae6197efc7c6aedda4e9fa8ddf592be6
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -962,11 +909,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-<<<<<<< HEAD
-  m_Offset: {x: 0, y: -0.019420236}
-=======
   m_Offset: {x: 0, y: 0.019029438}
->>>>>>> ac4f11a1ae6197efc7c6aedda4e9fa8ddf592be6
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -977,11 +920,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-<<<<<<< HEAD
-  m_Size: {x: 1, y: 1.9643342}
-=======
   m_Size: {x: 1.03, y: 2.136908}
->>>>>>> ac4f11a1ae6197efc7c6aedda4e9fa8ddf592be6
   m_EdgeRadius: 0
 --- !u!50 &207512914
 Rigidbody2D:
@@ -1072,15 +1011,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-<<<<<<< HEAD
-  sprite:
-  - {fileID: 0}
-  - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-=======
   sprite: {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
->>>>>>> ac4f11a1ae6197efc7c6aedda4e9fa8ddf592be6
   dragVegetable: {fileID: 1755922747745162, guid: 238d96923408d344aa79c5fe44193667,
     type: 2}
 --- !u!212 &335297399
@@ -1196,15 +1127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-<<<<<<< HEAD
-  sprite:
-  - {fileID: 0}
-  - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-=======
   sprite: {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
->>>>>>> ac4f11a1ae6197efc7c6aedda4e9fa8ddf592be6
   dragVegetable: {fileID: 1755922747745162, guid: 238d96923408d344aa79c5fe44193667,
     type: 2}
 --- !u!212 &347782979
@@ -1320,15 +1243,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-<<<<<<< HEAD
-  sprite:
-  - {fileID: 0}
-  - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-=======
   sprite: {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
->>>>>>> ac4f11a1ae6197efc7c6aedda4e9fa8ddf592be6
   dragVegetable: {fileID: 1755922747745162, guid: 238d96923408d344aa79c5fe44193667,
     type: 2}
 --- !u!212 &358754203
@@ -1444,15 +1359,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-<<<<<<< HEAD
-  sprite:
-  - {fileID: 0}
-  - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-=======
   sprite: {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
->>>>>>> ac4f11a1ae6197efc7c6aedda4e9fa8ddf592be6
   dragVegetable: {fileID: 1755922747745162, guid: 238d96923408d344aa79c5fe44193667,
     type: 2}
 --- !u!212 &377663529
@@ -1568,15 +1475,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-<<<<<<< HEAD
-  sprite:
-  - {fileID: 0}
-  - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-=======
   sprite: {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
->>>>>>> ac4f11a1ae6197efc7c6aedda4e9fa8ddf592be6
   dragVegetable: {fileID: 1755922747745162, guid: 238d96923408d344aa79c5fe44193667,
     type: 2}
 --- !u!212 &409670568
@@ -1692,15 +1591,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-<<<<<<< HEAD
-  sprite:
-  - {fileID: 0}
-  - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-=======
   sprite: {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
->>>>>>> ac4f11a1ae6197efc7c6aedda4e9fa8ddf592be6
   dragVegetable: {fileID: 1755922747745162, guid: 238d96923408d344aa79c5fe44193667,
     type: 2}
 --- !u!212 &453112726
@@ -1816,15 +1707,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-<<<<<<< HEAD
-  sprite:
-  - {fileID: 0}
-  - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-=======
   sprite: {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
->>>>>>> ac4f11a1ae6197efc7c6aedda4e9fa8ddf592be6
   dragVegetable: {fileID: 1755922747745162, guid: 238d96923408d344aa79c5fe44193667,
     type: 2}
 --- !u!212 &511225844
@@ -2208,15 +2091,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-<<<<<<< HEAD
-  sprite:
-  - {fileID: 0}
-  - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-=======
   sprite: {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
->>>>>>> ac4f11a1ae6197efc7c6aedda4e9fa8ddf592be6
   dragVegetable: {fileID: 1755922747745162, guid: 238d96923408d344aa79c5fe44193667,
     type: 2}
 --- !u!212 &800898047
@@ -2332,15 +2207,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-<<<<<<< HEAD
-  sprite:
-  - {fileID: 0}
-  - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-=======
   sprite: {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
->>>>>>> ac4f11a1ae6197efc7c6aedda4e9fa8ddf592be6
   dragVegetable: {fileID: 1755922747745162, guid: 238d96923408d344aa79c5fe44193667,
     type: 2}
 --- !u!212 &832906137
@@ -2696,15 +2563,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-<<<<<<< HEAD
-  sprite:
-  - {fileID: 0}
-  - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-=======
   sprite: {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
->>>>>>> ac4f11a1ae6197efc7c6aedda4e9fa8ddf592be6
   dragVegetable: {fileID: 1755922747745162, guid: 238d96923408d344aa79c5fe44193667,
     type: 2}
 --- !u!212 &1023928254
@@ -2820,15 +2679,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-<<<<<<< HEAD
-  sprite:
-  - {fileID: 0}
-  - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-=======
   sprite: {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
->>>>>>> ac4f11a1ae6197efc7c6aedda4e9fa8ddf592be6
   dragVegetable: {fileID: 1755922747745162, guid: 238d96923408d344aa79c5fe44193667,
     type: 2}
 --- !u!212 &1170629901
@@ -2944,15 +2795,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-<<<<<<< HEAD
-  sprite:
-  - {fileID: 0}
-  - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-=======
   sprite: {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
->>>>>>> ac4f11a1ae6197efc7c6aedda4e9fa8ddf592be6
   dragVegetable: {fileID: 1755922747745162, guid: 238d96923408d344aa79c5fe44193667,
     type: 2}
 --- !u!212 &1232932005
@@ -3068,15 +2911,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-<<<<<<< HEAD
-  sprite:
-  - {fileID: 0}
-  - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-=======
   sprite: {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
->>>>>>> ac4f11a1ae6197efc7c6aedda4e9fa8ddf592be6
   dragVegetable: {fileID: 1755922747745162, guid: 238d96923408d344aa79c5fe44193667,
     type: 2}
 --- !u!212 &1293752968
@@ -3192,15 +3027,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-<<<<<<< HEAD
-  sprite:
-  - {fileID: 0}
-  - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-=======
   sprite: {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
->>>>>>> ac4f11a1ae6197efc7c6aedda4e9fa8ddf592be6
   dragVegetable: {fileID: 1755922747745162, guid: 238d96923408d344aa79c5fe44193667,
     type: 2}
 --- !u!212 &1388871559
@@ -3316,15 +3143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-<<<<<<< HEAD
-  sprite:
-  - {fileID: 0}
-  - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-=======
   sprite: {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
->>>>>>> ac4f11a1ae6197efc7c6aedda4e9fa8ddf592be6
   dragVegetable: {fileID: 1755922747745162, guid: 238d96923408d344aa79c5fe44193667,
     type: 2}
 --- !u!212 &1454667622
@@ -3440,15 +3259,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-<<<<<<< HEAD
-  sprite:
-  - {fileID: 0}
-  - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-=======
   sprite: {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
->>>>>>> ac4f11a1ae6197efc7c6aedda4e9fa8ddf592be6
   dragVegetable: {fileID: 1755922747745162, guid: 238d96923408d344aa79c5fe44193667,
     type: 2}
 --- !u!212 &1483616375
@@ -3564,15 +3375,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-<<<<<<< HEAD
-  sprite:
-  - {fileID: 0}
-  - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-=======
   sprite: {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
->>>>>>> ac4f11a1ae6197efc7c6aedda4e9fa8ddf592be6
   dragVegetable: {fileID: 1755922747745162, guid: 238d96923408d344aa79c5fe44193667,
     type: 2}
 --- !u!212 &1494543834
@@ -3780,15 +3583,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-<<<<<<< HEAD
-  sprite:
-  - {fileID: 0}
-  - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-=======
   sprite: {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
->>>>>>> ac4f11a1ae6197efc7c6aedda4e9fa8ddf592be6
   dragVegetable: {fileID: 1755922747745162, guid: 238d96923408d344aa79c5fe44193667,
     type: 2}
 --- !u!212 &1597829471
@@ -3964,15 +3759,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-<<<<<<< HEAD
-  sprite:
-  - {fileID: 0}
-  - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-=======
   sprite: {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
->>>>>>> ac4f11a1ae6197efc7c6aedda4e9fa8ddf592be6
   dragVegetable: {fileID: 1755922747745162, guid: 238d96923408d344aa79c5fe44193667,
     type: 2}
 --- !u!212 &1718560550
@@ -4088,15 +3875,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-<<<<<<< HEAD
-  sprite:
-  - {fileID: 0}
-  - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-=======
   sprite: {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
->>>>>>> ac4f11a1ae6197efc7c6aedda4e9fa8ddf592be6
   dragVegetable: {fileID: 1755922747745162, guid: 238d96923408d344aa79c5fe44193667,
     type: 2}
 --- !u!212 &1774773185
@@ -4212,15 +3991,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-<<<<<<< HEAD
-  sprite:
-  - {fileID: 0}
-  - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-=======
   sprite: {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
->>>>>>> ac4f11a1ae6197efc7c6aedda4e9fa8ddf592be6
   dragVegetable: {fileID: 1755922747745162, guid: 238d96923408d344aa79c5fe44193667,
     type: 2}
 --- !u!212 &1838755081
@@ -4398,15 +4169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-<<<<<<< HEAD
-  sprite:
-  - {fileID: 0}
-  - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-=======
   sprite: {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
->>>>>>> ac4f11a1ae6197efc7c6aedda4e9fa8ddf592be6
   dragVegetable: {fileID: 1755922747745162, guid: 238d96923408d344aa79c5fe44193667,
     type: 2}
 --- !u!212 &1881398161
@@ -4605,11 +4368,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-<<<<<<< HEAD
-  m_Size: {x: 1.21, y: 2.1693106}
-=======
   m_Size: {x: 1.5, y: 2.29}
->>>>>>> ac4f11a1ae6197efc7c6aedda4e9fa8ddf592be6
   m_EdgeRadius: 0
 --- !u!114 &1915504961
 MonoBehaviour:
@@ -4695,13 +4454,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1915504959}
   m_LocalRotation: {x: -0, y: -0, z: 0.4524495, w: 0.89179003}
-<<<<<<< HEAD
-  m_LocalPosition: {x: 0.06, y: 3.66, z: -0.03}
-  m_LocalScale: {x: 0.64358425, y: 0.75700384, z: 0.65828943}
-=======
   m_LocalPosition: {x: 0.07, y: 3.74, z: -0.03}
   m_LocalScale: {x: 0.6187927, y: 0.7278433, z: 0.6329314}
->>>>>>> ac4f11a1ae6197efc7c6aedda4e9fa8ddf592be6
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -4775,15 +4529,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-<<<<<<< HEAD
-  sprite:
-  - {fileID: 0}
-  - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-=======
   sprite: {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
->>>>>>> ac4f11a1ae6197efc7c6aedda4e9fa8ddf592be6
   dragVegetable: {fileID: 1755922747745162, guid: 238d96923408d344aa79c5fe44193667,
     type: 2}
 --- !u!212 &1998407511
@@ -4899,15 +4645,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-<<<<<<< HEAD
-  sprite:
-  - {fileID: 0}
-  - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-=======
   sprite: {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
->>>>>>> ac4f11a1ae6197efc7c6aedda4e9fa8ddf592be6
   dragVegetable: {fileID: 1755922747745162, guid: 238d96923408d344aa79c5fe44193667,
     type: 2}
 --- !u!212 &2064393533
@@ -5023,15 +4761,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-<<<<<<< HEAD
-  sprite:
-  - {fileID: 0}
-  - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-=======
   sprite: {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
->>>>>>> ac4f11a1ae6197efc7c6aedda4e9fa8ddf592be6
   dragVegetable: {fileID: 1755922747745162, guid: 238d96923408d344aa79c5fe44193667,
     type: 2}
 --- !u!212 &2094793493
@@ -5147,15 +4877,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   plantType: 0
-<<<<<<< HEAD
-  sprite:
-  - {fileID: 0}
-  - {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-=======
   sprite: {fileID: 21300000, guid: c4f79c7d99f08e74ea56ec80fb7ba0e3, type: 3}
->>>>>>> ac4f11a1ae6197efc7c6aedda4e9fa8ddf592be6
   dragVegetable: {fileID: 1755922747745162, guid: 238d96923408d344aa79c5fe44193667,
     type: 2}
 --- !u!212 &2122707506
