@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114311367628107902}
   - component: {fileID: 114121664556026364}
   - component: {fileID: 50224780662975540}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Seed
   m_TagString: Seed
   m_Icon: {fileID: 0}

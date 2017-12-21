@@ -23,6 +23,8 @@ TagManager:
   - card
   - ReekStalk
   - score
+  - BlankGround
+  - SeededGround
   layers:
   - Default
   - TransparentFX

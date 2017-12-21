@@ -17,13 +17,14 @@ public class Tile : MonoBehaviour
 
     void Start () {
         // to make testing easier
-        state = 1;
+        state = 0;
     }
 	
 	void Update () {
         // check for state, if 2 it means seeds are on it
         if (state == (int)TileState.blank)
         {
+            tag = "BlankGround";
             GetComponent<SpriteRenderer>().sprite = null;
         }
         if (state == (int)TileState.raked)
@@ -33,6 +34,7 @@ public class Tile : MonoBehaviour
         }
         if (state == (int)TileState.seeded)
         {
+            tag = "SeededGround";
             plant.GrowPlant(this);
         }
     }
@@ -63,21 +65,27 @@ public class Tile : MonoBehaviour
 
     void OnMouseDown()
     {
-        if (plant.ready && state == (int)TileState.seeded)
+        if (state == (int)TileState.seeded)
         {
-            currentVegetable = Instantiate(dragVegetable, Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 2)), new Quaternion(0, 0, 0, 0));
-            currentVegetable.GetComponent<SpriteRenderer>().sprite = plant.plantSprite;
-            currentVegetable.GetComponent<DraggingVegetable>().plant = plant;
-            state = 0;
-            plant = null;
-            plantType = 0;
+            if (plant.ready && state == (int)TileState.seeded)
+            {
+                currentVegetable = Instantiate(dragVegetable, Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 2)), new Quaternion(0, 0, 0, 0));
+                currentVegetable.GetComponent<SpriteRenderer>().sprite = plant.plantSprite;
+                currentVegetable.GetComponent<DraggingVegetable>().plant = plant;
+                state = 0;
+                plant = null;
+                plantType = 0;
+            }
         }
     }
 
     void OnMouseDrag()
     {
-        Vector3 cursorScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 2);
-        Vector3 cursorPosition = Camera.main.ScreenToWorldPoint(cursorScreenPoint);
-        currentVegetable.transform.position = cursorPosition;
+        if (currentVegetable)
+        {
+            Vector3 cursorScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 2);
+            Vector3 cursorPosition = Camera.main.ScreenToWorldPoint(cursorScreenPoint);
+            currentVegetable.transform.position = cursorPosition;
+        }
     }
 }

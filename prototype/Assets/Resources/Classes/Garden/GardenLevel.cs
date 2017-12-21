@@ -21,7 +21,7 @@ public class GardenLevel : MonoBehaviour
                     if (hit)
                     {
                         Tile targetScript = hit.collider.gameObject.GetComponent<Tile>();
-                        if (hit.collider.CompareTag("Tile") && targetScript.state == 0)
+                        if (hit.collider.CompareTag("BlankGround") && targetScript.state == 0)
                         {
                             hit.transform.SendMessageUpwards("ChangeState", 1);
                         }

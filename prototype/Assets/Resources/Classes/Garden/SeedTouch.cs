@@ -28,29 +28,27 @@ public class SeedTouch : MonoBehaviour {
         }
     }
     
-    void OnTriggerStay2D(Collider2D other)
-    {
-        Tile targetScript = other.gameObject.GetComponent<Tile>();
-        if (targetScript)
-        {
-            if (targetScript.state == (int)TileState.raked && Input.GetMouseButtonUp(0))
-            {
-                // send data to the tile, see TileBehaviour.cs
-                other.transform.SendMessageUpwards("SeedPlant", plant);
-                other.transform.SendMessageUpwards("ChangeState", (int)TileState.seeded);
-                Destroy(this.gameObject);
-            }
-        }
-        if (Input.GetMouseButtonUp(0) && other.gameObject.tag != "RakedGround")
-        {
-            Destroy(this.gameObject);
-        }
-    }
-
     void Update()
     {
         RaycastHit2D hit = Physics2D.Raycast(transform.position, -Vector2.up);
-        if (hit.collider.tag != "RakedGround" && Input.GetMouseButtonUp(0))
+        if (hit && Input.GetMouseButtonUp(0))
+        {
+            if (hit.collider.tag != "RakedGround" || hit.collider.tag == null)
+            {
+                Destroy(this.gameObject);
+            }
+            if (hit.collider.tag == "RakedGround")
+            {
+                Tile tilePlacedOn = hit.collider.GetComponent<Tile>();
+                if (tilePlacedOn.state == (int)TileState.raked)
+                {
+                    hit.transform.SendMessageUpwards("SeedPlant", plant);
+                    hit.transform.SendMessageUpwards("ChangeState", (int)TileState.seeded);
+                    Destroy(this.gameObject);
+                }
+            }
+        }
+        else if (!hit && Input.GetMouseButtonUp(0))
         {
             Destroy(this.gameObject);
         }
