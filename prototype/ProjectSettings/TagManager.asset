@@ -25,6 +25,8 @@ TagManager:
   - score
   - BlankGround
   - SeededGround
+  - toggleWater
+  - toggleRake
   layers:
   - Default
   - TransparentFX
