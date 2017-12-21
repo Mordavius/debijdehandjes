@@ -6,7 +6,7 @@ enum TileState { blank, raked, seeded }
 
 public class Tile : MonoBehaviour
 {
-    Plant plant;
+    public Plant plant;
     public int state;
     public int plantType;
 
@@ -17,7 +17,7 @@ public class Tile : MonoBehaviour
 
     void Start () {
         // to make testing easier
-        state = 1;
+        state = 0;
     }
 	
 	void Update () {
@@ -40,12 +40,12 @@ public class Tile : MonoBehaviour
     }
 
     // these functions are for receiving vars from the seeds
-    void ChangeState(int newState)
+    public void ChangeState(int newState)
     {
         state = newState;
     }
 
-    void SeedPlant(Plant newPlant)
+    public void SeedPlant(Plant newPlant)
     {
         plant = newPlant;
     }
@@ -53,15 +53,6 @@ public class Tile : MonoBehaviour
     public void ChangeSprite(Sprite newSprite)
     {
         GetComponent<SpriteRenderer>().sprite = newSprite;
-    }
-
-    public void OnTriggerEnter2D(Collider2D other)
-    {
-        if(other.tag == "WC" && state == 2)
-        {
-            plant.GetWatered();
-            GetComponent<SpriteRenderer>().color = Color.gray;
-        }
     }
 
     void OnMouseDown()

@@ -19,28 +19,49 @@ public class GardenLevel : MonoBehaviour
             for (int i = 0; i < nbTouches; i++)
             {
                 Touch touch = Input.GetTouch(i);
-                if (touch.phase == TouchPhase.Moved)
+                if (touch.phase == TouchPhase.Moved && canRake)
                 {
-                    RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(touch.position), Vector2.zero);
-                    if (hit)
+                    RaycastHit2D hitRake = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(touch.position), Vector2.zero);
+                    if (hitRake)
                     {
-                        Tile targetScript = hit.collider.gameObject.GetComponent<Tile>();
-                        if (hit.collider.CompareTag("BlankGround") && targetScript.state == 0)
+                        Tile targetScript = hitRake.collider.gameObject.GetComponent<Tile>();
+                        if (hitRake.collider.CompareTag("BlankGround") && targetScript.state == 0)
                         {
-                            hit.transform.SendMessageUpwards("ChangeState", 1);
+                            hitRake.transform.SendMessageUpwards("ChangeState", 1);
+                        }
+                    }
+                }
+                if ((touch.phase == TouchPhase.Began || touch.phase == TouchPhase.Moved) && canWater)
+                {
+                    RaycastHit2D hitWater = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(touch.position), Vector2.zero);
+                    if (hitWater)
+                    {
+                        Tile targetScript = hitWater.collider.gameObject.GetComponent<Tile>();
+                        if (hitWater.collider.CompareTag("SeededGround") && !targetScript.plant.ready)
+                        {
+                            targetScript.plant.GetWatered();
+                            targetScript.GetComponent<SpriteRenderer>().color = Color.gray;
                         }
                     }
                 }
             }
         }
-        RaycastHit2D hitToggle = Physics2D.Raycast(Input.mousePosition, Vector2.zero);
-        if (hitToggle.collider.tag == "toggleRake")
+        RaycastHit2D hitToggle = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+        if (hitToggle.collider.tag == "toggleRake" && Input.GetMouseButtonDown(0))
         {
             ToggleRake();
+            if (canRake && canWater)
+            {
+                ToggleWater();
+            }
         }
-        else if (hitToggle.collider.tag == "toggleWater")
+        else if (hitToggle.collider.tag == "toggleWater" && Input.GetMouseButtonDown(0))
         {
             ToggleWater();
+            if (canRake && canWater)
+            {
+                ToggleRake();
+            }
         }
     }
 
