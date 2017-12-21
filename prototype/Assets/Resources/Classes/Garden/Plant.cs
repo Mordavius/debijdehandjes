@@ -47,6 +47,7 @@ public abstract class Plant : ScriptableObject
         {
             tilePlantedOn.ChangeSprite(grownPlantSprite);
             ready = true;
+            tilePlantedOn.GetComponent<SpriteRenderer>().color = Color.white;
         }
     }
 
