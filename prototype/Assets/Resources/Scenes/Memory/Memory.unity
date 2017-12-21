@@ -823,8 +823,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -339, y: 177}
-  m_SizeDelta: {x: 103.2, y: 81}
+  m_AnchoredPosition: {x: -343.2, y: 173.8}
+  m_SizeDelta: {x: 94.6, y: 87.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1321865261
 MonoBehaviour:
@@ -845,9 +845,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.61960787, g: 0.45882356, b: 0.29803923, a: 1}
-    m_HighlightedColor: {r: 0.4784314, g: 0.3803922, b: 0.30588236, a: 1}
-    m_PressedColor: {r: 0.4431373, g: 0.3803922, b: 0.3137255, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.6985294, g: 0.7102027, b: 0.7190744, a: 1}
+    m_PressedColor: {r: 0.5294118, g: 0.5407361, b: 0.5527682, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -861,11 +861,11 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1321865262}
+  m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 577987301}
+      - m_Target: {fileID: 0}
         m_MethodName: loadMain
         m_Mode: 1
         m_Arguments:
@@ -897,7 +897,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 1787ec961c3c4964191263e25322d0b4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c5caf236ba02eda4b94bacc40fb4638a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
