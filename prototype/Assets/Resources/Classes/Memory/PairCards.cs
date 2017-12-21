@@ -68,8 +68,6 @@ public class PairCards : MonoBehaviour {
                 }
             }
         }
-        Debug.Log(touches);
-
         if(cards.Length <= 0)
         {
             scoreScreen.SetActive(true);

@@ -14,42 +14,41 @@ public class SeedTouch : MonoBehaviour {
         switch (plantType)
         {
             case (int)PlantType.carrot:
-                plant = new Carrot();
+                plant = new Vegetables.Carrot();
                 this.transform.localScale -= new Vector3(.005f, .005f, .005f);
                 break;
             case (int)PlantType.leek:
-                plant = new Leek();
-                this.transform.localScale += new Vector3(.05f, .05f, .05f);
+                plant = new Vegetables.Leek();
+                this.transform.localScale -= new Vector3(.005f, .005f, .005f);
                 break;
             default:
-                plant = new Carrot();
+                plant = new Vegetables.Carrot();
                 this.transform.localScale -= new Vector3(.005f, .005f, .005f);
                 break;
         }
     }
     
-    void OnTriggerStay2D(Collider2D other)
+    void Update()
     {
-        Tile targetScript = other.gameObject.GetComponent<Tile>();
-        if (targetScript)
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, -Vector2.up);
+        if (hit && Input.GetMouseButtonUp(0))
         {
-            if (targetScript.state == (int)TileState.raked && Input.GetMouseButtonUp(0))
+            if (hit.collider.tag != "RakedGround" || hit.collider.tag == null)
             {
-                // send data to the tile, see TileBehaviour.cs
-                other.transform.SendMessageUpwards("SeedPlant", plant);
-                other.transform.SendMessageUpwards("ChangeState", (int)TileState.seeded);
                 Destroy(this.gameObject);
             }
+            if (hit.collider.tag == "RakedGround")
+            {
+                Tile tilePlacedOn = hit.collider.GetComponent<Tile>();
+                if (tilePlacedOn.state == (int)TileState.raked)
+                {
+                    hit.transform.SendMessageUpwards("SeedPlant", plant);
+                    hit.transform.SendMessageUpwards("ChangeState", (int)TileState.seeded);
+                    Destroy(this.gameObject);
+                }
+            }
         }
-        if (Input.GetMouseButtonUp(0) && other.gameObject.tag != "RakedGround")
-        {
-            Destroy(this.gameObject);
-        }
-    }
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (Input.GetMouseButtonUp(0) && other.gameObject.tag != "RakedGround")
+        else if (!hit && Input.GetMouseButtonUp(0))
         {
             Destroy(this.gameObject);
         }
