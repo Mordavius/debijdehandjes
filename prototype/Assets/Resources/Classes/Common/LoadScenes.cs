@@ -35,4 +35,9 @@ public class LoadScenes : MonoBehaviour {
     {
         SceneManager.LoadScene("CarrotPulling");
     }
+
+    public void closeGame()
+    {
+        Application.Quit();
+    }
 }
