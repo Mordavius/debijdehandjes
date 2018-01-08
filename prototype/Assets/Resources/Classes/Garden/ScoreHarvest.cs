@@ -5,9 +5,18 @@ using UnityEngine.UI;
 
 public class ScoreHarvest : MonoBehaviour {
 
-    private int scoreCount = 0;
+    public int scoreCount = 0;
     public Text scoreText;
     private Plant plant;
+
+    void Start()
+    {
+        if (PlayerPrefs.GetInt("score") != 0)
+        {
+            scoreCount = PlayerPrefs.GetInt("score");
+        }
+        scoreText.text = scoreCount.ToString();
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {

@@ -1607,6 +1607,7 @@ GameObject:
   - component: {fileID: 563636346}
   - component: {fileID: 563636345}
   - component: {fileID: 563636344}
+  - component: {fileID: 563636347}
   m_Layer: 0
   m_Name: backButton
   m_TagString: Untagged
@@ -1671,8 +1672,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 833793814}
-        m_MethodName: loadMain
+      - m_Target: {fileID: 563636347}
+        m_MethodName: SaveAndExit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1717,6 +1718,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 563636342}
+--- !u!114 &563636347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 563636342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7b28adebcd88e04aad58081a9772908, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreGameObject: {fileID: 1898838966}
 --- !u!1 &580505902
 GameObject:
   m_ObjectHideFlags: 0
@@ -4002,6 +4015,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05a0ef76b95cdc946837b8d014a9f87a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreCount: 0
   scoreText: {fileID: 608987201}
 --- !u!1 &1915504959
 GameObject:

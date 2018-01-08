@@ -18,7 +18,7 @@ public class Plant : ScriptableObject
 
     public bool ready = false;
 
-    string path = "Sprites/Garden/Plants/";
+    string spritePath = "Sprites/Garden/Plants/";
 
     public Plant()
     {
@@ -28,10 +28,10 @@ public class Plant : ScriptableObject
         growthMultiplier = 1;
         waterMultiplier = 1;
 
-        plantSprite = Resources.Load<Sprite>(path + plantName);
-        seedSprite = Resources.Load<Sprite>(path + plantName + "-seed");
-        grownPlantSprite = Resources.Load<Sprite>(path + plantName + "-grown");
-        groundSprite = Resources.Load<Sprite>(path + plantName + "-dirtPile");
+        plantSprite = Resources.Load<Sprite>(spritePath + plantName);
+        seedSprite = Resources.Load<Sprite>(spritePath + plantName + "-seed");
+        grownPlantSprite = Resources.Load<Sprite>(spritePath + plantName + "-grown");
+        groundSprite = Resources.Load<Sprite>(spritePath + plantName + "-dirtPile");
     }
 
     public void GrowPlant(Tile tilePlantedOn)
