@@ -19,7 +19,6 @@ public class Drag : MonoBehaviour {
         isDragged = false;
     }
 
-
     void OnMouseDrag()
     {
         Vector3 curScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z);

@@ -20,7 +20,7 @@ public abstract class Plant : ScriptableObject
 
     public bool ready = false;
 
-    string path = "Sprites/Garden/";
+    string spritePath = "Sprites/Garden/";
 
     public Plant()
     {
@@ -31,9 +31,9 @@ public abstract class Plant : ScriptableObject
         growthMultiplier = 1;
         waterMultiplier = 1;
 
-        plantSprite = Resources.Load<Sprite>(path + "Plants/" + plantName);
-        grownPlantSprite = Resources.Load<Sprite>(path + "Plants/" + plantName + "-grown");
-        groundSprite = Resources.Load<Sprite>(path + plantName + "-dirtPile");
+        plantSprite = Resources.Load<Sprite>(spritePath + "Plants/" + plantName);
+        grownPlantSprite = Resources.Load<Sprite>(spritePath + "Plants/" + plantName + "-grown");
+        groundSprite = Resources.Load<Sprite>(spritePath + plantName + "-dirtPile");
     }
 
     public void GrowPlant(Tile tilePlantedOn)

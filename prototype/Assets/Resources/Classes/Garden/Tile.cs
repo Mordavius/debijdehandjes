@@ -17,7 +17,7 @@ public class Tile : MonoBehaviour
 
     void Start () {
         // to make testing easier
-        state = 0;
+        state = 1;
     }
 	
 	void Update () {
