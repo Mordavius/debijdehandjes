@@ -15,7 +15,7 @@ public class ScoreHarvest : MonoBehaviour {
         {
             plant = other.GetComponent<DraggingVegetable>().plant;
             scoreCount += plant.valueOfHarvest;
-            scoreText.text = scoreCount.ToString();
+            scoreText.text = "€" + scoreCount.ToString("N0", System.Globalization.CultureInfo.GetCultureInfo("nl-NL")); ;
             Destroy(other.gameObject);
         }
     }
