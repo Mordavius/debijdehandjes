@@ -6,13 +6,15 @@ using UnityEngine.SceneManagement;
 public class SaveData : MonoBehaviour {
 
     public GameObject scoreGameObject;
+    private GameManager GameManager;
     int score;
 
-	public void SaveAndExit()
+    public void SaveAndExit()
     {
+        GameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
         score = scoreGameObject.GetComponent<ScoreHarvest>().scoreCount;
-        PlayerPrefs.SetInt("score", score);
-        PlayerPrefs.Save();
+        Debug.Log(score);
+        GameManager.SaveAccountScoreData(score);
         SceneManager.LoadScene("mainmenu");
     }
 }
