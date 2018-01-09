@@ -29,6 +29,7 @@ public class TouchDetect : MonoBehaviour {
         if (waterCount == 10)
         {
             canvas.SetActive(true);
+            GetComponent<AudioSource>().mute = true;
         }
         bucketpos.GetComponent<SpriteRenderer>().sprite = bucket[bucketindex];
         bucketpos.transform.localScale = new Vector3(0.1215707f, 0.1215707f, 0.1215707f);
@@ -69,7 +70,7 @@ public class TouchDetect : MonoBehaviour {
                                 break;
                         }
                     }
-                 }
+                }
             }
         }
 	}

@@ -71,6 +71,7 @@ public class PairCards : MonoBehaviour {
         if(cards.Length <= 0)
         {
             scoreScreen.SetActive(true);
+            GetComponent<AudioSource>().mute = true;
         }
     }
 }

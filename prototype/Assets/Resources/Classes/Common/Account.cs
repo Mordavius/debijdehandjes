@@ -1,28 +1,113 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Account : MonoBehaviour {
 
-    public string userName;
-    public int ID;
+    private GameManager GameManager;
+    public GameObject buttonAccount1;
+    public GameObject buttonAccount2;
+    public GameObject buttonAccount3;
 
+    private void Start()
+    {
+        GameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+    }
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    private void Update()
+    {
+        if (GameManager.gameManagerAccountID == 1)
+        {
+            buttonAccount1.GetComponent<Image>().color = Color.green;
+            buttonAccount2.GetComponent<Image>().color = Color.white;
+            buttonAccount3.GetComponent<Image>().color = Color.white;
+        }
+        else if(GameManager.gameManagerAccountID == 2)
+        {
+            buttonAccount1.GetComponent<Image>().color = Color.white;
+            buttonAccount2.GetComponent<Image>().color = Color.green;
+            buttonAccount3.GetComponent<Image>().color = Color.white;
+        }
+        else if(GameManager.gameManagerAccountID == 3)
+        {
+            buttonAccount1.GetComponent<Image>().color = Color.white;
+            buttonAccount2.GetComponent<Image>().color = Color.white;
+            buttonAccount3.GetComponent<Image>().color = Color.green;
+        }
 
-    //private void Login(int ID){}
+        if (GameManager.accountName1 != null)
+        {
+            buttonAccount1.GetComponentInChildren<Text>().text = GameManager.accountName1;
+        }
+        else
+        {
+            buttonAccount1.GetComponentInChildren<Text>().text = "Account 1";
+        }
 
-    //private void Logout(int ID){}
+        if (GameManager.accountName2 != null)
+        {
+            buttonAccount2.GetComponentInChildren<Text>().text = GameManager.accountName2;
+        }
+        else
+        {
+            buttonAccount2.GetComponentInChildren<Text>().text = "Account 2";
+        }
 
-    //private void NewAccount(){}
+        if (GameManager.accountName3 != null)
+        {
+            buttonAccount3.GetComponentInChildren<Text>().text = GameManager.accountName3;
+        }
+        else
+        {
+            buttonAccount3.GetComponentInChildren<Text>().text = "Account 3";
+        }
+    }
 
-    //private void DeleteAccount(){}
+    public void ChooseAccount1()
+    {
+        GameManager.LoadAccountData(1);
+    }
+
+    public void ChooseAccount2()
+    {
+        GameManager.LoadAccountData(2);
+    }
+
+    public void ChooseAccount3()
+    {
+        GameManager.LoadAccountData(3);
+    }
+
+    public void ResetAccount1()
+    {
+        GameManager.ResetAccountData(1);
+    }
+
+    public void ResetAccount2()
+    {
+        GameManager.ResetAccountData(2);
+    }
+
+    public void ResetAccount3()
+    {
+        GameManager.ResetAccountData(3);
+    }
+
+    //OnValueChanged, dynamic ipv static REMINDER VOOR RUBEN
+    public void ChangeAccountName1(string newName)
+    {
+        Debug.Log(newName);
+        GameManager.SaveAccountNameData(newName, 1);
+    }
+
+    public void ChangeAccountName2(string newName)
+    {
+        GameManager.SaveAccountNameData(newName, 2);
+    }
+
+    public void ChangeAccountName3(string newName)
+    {
+        GameManager.SaveAccountNameData(newName, 3);
+    }
 }

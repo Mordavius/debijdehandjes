@@ -2,17 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum PlantType { unknown, carrot, leek }
-
-public abstract class Plant : ScriptableObject
+public class Plant : ScriptableObject
 {
     public virtual string plantName { get; set; }
-    public virtual PlantType plantType { get; set; }
     public virtual int valueOfHarvest { get; set; }
     public virtual float growthTimeInSeconds { get; set; }
     public virtual float growthMultiplier { get; set; }
 
     public Tile tilePlantedOn { get; set; }
+    public Sprite seedSprite { get; set; }
     public Sprite plantSprite { get; set; }
     public Sprite grownPlantSprite { get; set; }
     public Sprite groundSprite { get; set; }
@@ -20,20 +18,20 @@ public abstract class Plant : ScriptableObject
 
     public bool ready = false;
 
-    string path = "Sprites/Garden/";
+    string spritePath = "Sprites/Garden/Plants/";
 
     public Plant()
     {
         plantName = "unknown";
         valueOfHarvest = 10;
-        plantType = PlantType.unknown;
         growthTimeInSeconds = 20;
         growthMultiplier = 1;
         waterMultiplier = 1;
 
-        plantSprite = Resources.Load<Sprite>(path + "Plants/" + plantName);
-        grownPlantSprite = Resources.Load<Sprite>(path + "Plants/" + plantName + "-grown");
-        groundSprite = Resources.Load<Sprite>(path + plantName + "-dirtPile");
+        plantSprite = Resources.Load<Sprite>(spritePath + plantName);
+        seedSprite = Resources.Load<Sprite>(spritePath + plantName + "-seed");
+        grownPlantSprite = Resources.Load<Sprite>(spritePath + plantName + "-grown");
+        groundSprite = Resources.Load<Sprite>(spritePath + plantName + "-dirtPile");
     }
 
     public void GrowPlant(Tile tilePlantedOn)
