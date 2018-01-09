@@ -5,6 +5,6 @@ using UnityEngine;
 public class Lettuce : Plant
 {
     public override string plantName { get { return "lettuce"; } }
-    public override int valueOfHarvest { get { return 420; } }
-    public override float growthMultiplier { get { return 12f; } }
+    public override int valueOfHarvest { get { return 14; } }
+    public override float growthMultiplier { get { return 0.6f; } }
 }

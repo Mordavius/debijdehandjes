@@ -7,7 +7,6 @@ public class SeedTouch : MonoBehaviour {
 
     public string plantName;
     public Plant plant;
-    public Sprite[] sprite;
 
     void Start()
     {
