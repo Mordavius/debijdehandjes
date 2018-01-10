@@ -15,7 +15,7 @@ public class RotateHandle : MonoBehaviour {
 
     void Start()
     {
-        sensitivity = 0.11f;
+        sensitivity = 0.065f;
         rotation = Vector3.zero;
         canvas = GameObject.Find("StartCanvas");
         selectedArm = (ArmSelection)canvas.GetComponent(typeof(ArmSelection));

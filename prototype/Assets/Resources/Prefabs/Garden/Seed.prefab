@@ -38,8 +38,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1784466749381060}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.513587, y: -3.4442348, z: 2}
-  m_LocalScale: {x: 0.03134293, y: 0.03134293, z: 0.03134293}
+  m_LocalPosition: {x: -5.2174854, y: -1.2001486, z: 2}
+  m_LocalScale: {x: 0.01362303, y: 0.01362303, z: 0.01362303}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -112,12 +112,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3740fe589ec38e45bd965118ebb255b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plantType: 0
+  plantName: 
   plant: {fileID: 0}
-  sprite:
-  - {fileID: 0}
-  - {fileID: 21300000, guid: 5b921917f052f524da528e6dd97b4961, type: 3}
-  - {fileID: 21300000, guid: 8f15241aa2a2e464e8ca6fbf0a96b79e, type: 3}
 --- !u!212 &212058287245595970
 SpriteRenderer:
   m_ObjectHideFlags: 1
