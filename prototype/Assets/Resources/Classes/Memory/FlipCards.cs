@@ -5,19 +5,29 @@ using UnityEngine;
 public class FlipCards : MonoBehaviour {
     float speed;
     public bool turnable = false;
+    private GameObject yesButton;
+    private bool buttonPressed = false;
 
-    void Start()
+    private void Start()
     {
-        StartCoroutine(wait());
+        yesButton = GameObject.Find("StartCanvas");
     }
-    
-	void Update () {
-        if (this.transform.eulerAngles.y >= 180)
+
+    void Update () {
+        buttonPressed = yesButton.GetComponent<MemoryLevel>().yesButton;
+
+        if (buttonPressed)
         {
-            speed = 0;
-            turnable = true;
+            StartCoroutine(wait());
+
+            if (this.transform.eulerAngles.y >= 180)
+            {
+                speed = 0;
+                turnable = true;
+            }
+            this.transform.Rotate(Vector3.up * speed);
         }
-        this.transform.Rotate(Vector3.up * speed);
+    
     }
 
     IEnumerator wait()
