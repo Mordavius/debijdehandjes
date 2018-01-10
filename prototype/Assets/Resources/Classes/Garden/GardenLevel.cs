@@ -20,7 +20,7 @@ public class GardenLevel : MonoBehaviour
             for (int i = 0; i < nbTouches; i++)
             {
                 Touch touch = Input.GetTouch(i);
-                if (touch.phase == TouchPhase.Moved && canRake)
+                if (touch.phase == TouchPhase.Moved && canRake && GameObject.FindGameObjectWithTag("Seed") == null)
                 {
                     RaycastHit2D hitRake = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(touch.position), Vector2.zero);
                     if (hitRake)
@@ -32,7 +32,7 @@ public class GardenLevel : MonoBehaviour
                         }
                     }
                 }
-                if ((touch.phase == TouchPhase.Began || touch.phase == TouchPhase.Moved) && canWater)
+                if ((touch.phase == TouchPhase.Began || touch.phase == TouchPhase.Moved) && canWater && GameObject.FindGameObjectWithTag("Seed") == null)
                 {
                     RaycastHit2D hitWater = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(touch.position), Vector2.zero);
                     if (hitWater)

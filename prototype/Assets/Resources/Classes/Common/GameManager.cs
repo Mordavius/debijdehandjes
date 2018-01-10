@@ -13,14 +13,18 @@ public class GameManager : MonoBehaviour {
     public int gameManagerAccountID = 1;
 
     void Awake(){
+        // zorgt ervoor dat het niet verdwijnt wanneer er van scene gewisseld wordt
         DontDestroyOnLoad(transform.gameObject);
+        // zorgt ervoor dat er maar 1 gamemanager is
         if (FindObjectsOfType(GetType()).Length > 1)
         {
             Destroy(gameObject);
         }
+        // laad data van account 1 in
         LoadAccountData(gameManagerAccountID);
     }
 
+    // haalt de score op van het bijbehorende account
 	public void LoadAccountData(int accountID) {
         gameManagerAccountID = accountID;
         accountName = "name-" + gameManagerAccountID;
@@ -69,7 +73,7 @@ public class GameManager : MonoBehaviour {
         accountScore = "score-" + gameManagerAccountID;
         score = 0;
         PlayerPrefs.SetInt(accountScore, 0);
-        PlayerPrefs.SetString(accountScore, null);
+        PlayerPrefs.SetString(accountName, null);
         PlayerPrefs.Save();
     }
 }
