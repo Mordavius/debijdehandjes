@@ -14,7 +14,7 @@ public class PairCards : MonoBehaviour {
 
     GameObject[] cards;
     bool touching = false;
-    bool turnable;
+    public bool turnable;
     bool turnable2;
 
     void Update () {
@@ -24,7 +24,6 @@ public class PairCards : MonoBehaviour {
             touch = Input.GetTouch(0);
             hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(touch.position), Vector2.zero);
             turnable = hit.collider.gameObject.GetComponent<FlipCards>().turnable;
-
             if (touch.phase == TouchPhase.Began && turnable)
             {
                 hit.transform.eulerAngles = new Vector3(0, 0, 0);
@@ -58,34 +57,21 @@ public class PairCards : MonoBehaviour {
             }
         }
         cards = GameObject.FindGameObjectsWithTag("card");
+        
         if (touches == 0)
         {
             foreach (GameObject card in cards)
             {
-                if (card.transform.parent.GetComponent<FlipCards>().turnable)
+                if (turnable)
                 {
                     card.transform.parent.eulerAngles = new Vector3(0, 180, 0);
                 }
             }
         }
-        if(cards.Length <= 0)
+        if (cards.Length <= 5 && turnable)
         {
             scoreScreen.SetActive(true);
             GetComponent<AudioSource>().mute = true;
         }
     }
 }
-
-/*
-if (tik[1].ingedrukt){
-    draai180graden(); // dun
-    tik[2].kanJeIndrukken = true;
-    if(tik[1].hit == tik[2].hit){
-        blijfOmgedraaid();
-        score++;
-    }
-}
-else{
-    draaiTerug();
-}
-*/

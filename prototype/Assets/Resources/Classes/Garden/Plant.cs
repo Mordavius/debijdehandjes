@@ -12,19 +12,20 @@ public class Plant : ScriptableObject
     public Tile tilePlantedOn { get; set; }
     public Sprite seedSprite { get; set; }
     public Sprite plantSprite { get; set; }
-    public Sprite grownPlantSprite { get; set; }
-    public Sprite groundSprite { get; set; }
-    public float waterMultiplier { get; set; }
+    private Sprite grownPlantSprite { get; set; }
+    private Sprite groundSprite { get; set; }
+    private float waterMultiplier { get; set; }
 
     public bool ready = false;
+    public bool isWatered = false;
 
-    string spritePath = "Sprites/Garden/Plants/";
+    private string spritePath = "Sprites/Garden/Plants/";
 
     public Plant()
     {
         plantName = "unknown";
         valueOfHarvest = 10;
-        growthTimeInSeconds = 20;
+        growthTimeInSeconds = 60;
         growthMultiplier = 1;
         waterMultiplier = 1;
 
@@ -51,9 +52,7 @@ public class Plant : ScriptableObject
 
     public void GetWatered()
     {
-        waterMultiplier = 2;
+        isWatered = true;
+        waterMultiplier = 3;
     }
-
-    //public void HarvestPlant(Tile){}
-
 }

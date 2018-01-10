@@ -29,6 +29,7 @@ TagManager:
   - SeededGround
   - toggleWater
   - toggleRake
+  - vegetable
   layers:
   - Default
   - TransparentFX

@@ -6,12 +6,12 @@ public class FlipCards : MonoBehaviour {
     float speed;
     public bool turnable = false;
 
-    void Start()
+    private void Start()
     {
         StartCoroutine(wait());
     }
-    
-	void Update () {
+
+    void Update () {
         if (this.transform.eulerAngles.y >= 180)
         {
             speed = 0;

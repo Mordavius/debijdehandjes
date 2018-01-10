@@ -13,7 +13,6 @@ public class SaveData : MonoBehaviour {
     {
         GameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
         score = scoreGameObject.GetComponent<ScoreHarvest>().scoreCount;
-        Debug.Log(score);
         GameManager.SaveAccountScoreData(score);
         SceneManager.LoadScene("mainmenu");
     }

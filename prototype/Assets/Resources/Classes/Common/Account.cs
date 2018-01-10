@@ -36,7 +36,7 @@ public class Account : MonoBehaviour {
             buttonAccount3.GetComponent<Image>().color = Color.green;
         }
 
-        if (GameManager.accountName1 != null)
+        if (GameManager.accountName1 != null || GameManager.accountName1 == "")
         {
             buttonAccount1.GetComponentInChildren<Text>().text = GameManager.accountName1;
         }
@@ -45,7 +45,7 @@ public class Account : MonoBehaviour {
             buttonAccount1.GetComponentInChildren<Text>().text = "Account 1";
         }
 
-        if (GameManager.accountName2 != null)
+        if (GameManager.accountName2 != null || GameManager.accountName2 == "")
         {
             buttonAccount2.GetComponentInChildren<Text>().text = GameManager.accountName2;
         }
@@ -54,7 +54,7 @@ public class Account : MonoBehaviour {
             buttonAccount2.GetComponentInChildren<Text>().text = "Account 2";
         }
 
-        if (GameManager.accountName3 != null)
+        if (GameManager.accountName3 != null || GameManager.accountName3 == "")
         {
             buttonAccount3.GetComponentInChildren<Text>().text = GameManager.accountName3;
         }

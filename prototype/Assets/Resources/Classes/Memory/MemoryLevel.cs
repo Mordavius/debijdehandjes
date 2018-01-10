@@ -4,23 +4,18 @@ using UnityEngine;
 
 public class MemoryLevel : MonoBehaviour {
 
-    public bool[] isTurned;
-    public List<int> cardStore;
-    public List<int> cardActive;
+    public bool buttonPressed = false;
+    GameObject canvas;
 
     // Use this for initialization
     void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+        canvas = GameObject.Find("StartCanvas");
+    }
 
-    //private void SpawnCards(){}
+    public void SelectYes()
+    {
+        canvas.SetActive(false);
+        buttonPressed = true;
+    }
 
-    //private void PairCards(){}
-
-    //private void FlipCards(){}
 }
