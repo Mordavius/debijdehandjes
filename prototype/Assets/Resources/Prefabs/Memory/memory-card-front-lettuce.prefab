@@ -139,10 +139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnable: 0
-<<<<<<< HEAD
   yesButton: {fileID: 0}
-=======
->>>>>>> 2683095df02edd8d3a33f1bca5d4bec2e903146c
 --- !u!212 &212080320838741172
 SpriteRenderer:
   m_ObjectHideFlags: 1

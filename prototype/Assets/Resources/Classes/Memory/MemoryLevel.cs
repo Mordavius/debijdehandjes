@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MemoryLevel : MonoBehaviour {
 
-    public bool yesButton = false;
+    public bool buttonPressed = false;
     GameObject canvas;
 
     // Use this for initialization
@@ -15,7 +15,7 @@ public class MemoryLevel : MonoBehaviour {
     public void SelectYes()
     {
         canvas.SetActive(false);
-        yesButton = true;
+        buttonPressed = true;
     }
 
 }

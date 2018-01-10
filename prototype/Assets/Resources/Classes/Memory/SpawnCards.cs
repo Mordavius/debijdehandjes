@@ -11,23 +11,38 @@ public class SpawnCards : MonoBehaviour {
 
     private float xPos = 0;
 
-    void Start () {
-        for (int i = 0; i < 12; i++)
+    private GameObject yesButton;
+    private bool buttonPressed = false;
+
+    void Start()
+    {
+        yesButton = GameObject.Find("StartCanvas");
+    }
+
+    void Update () {
+        buttonPressed = yesButton.GetComponent<MemoryLevel>().buttonPressed;
+
+        if (buttonPressed)
         {
-            int randomIndex = Random.Range(0, cardStore.Count);
-            cardActive.Add(cardStore[randomIndex]);
-            cardStore.RemoveAt(randomIndex);
-        }
-        int cardCount = 0;
-        for (int yPos = 0; yPos < 3; yPos++)
-        {
-            Instantiate(card[cardActive[cardCount]], new Vector3(xPos, yPos, 0), new Quaternion(0, 0, 0, 0));
-            cardCount++;
-            for (int xPos = 1; xPos < 4; xPos++)
+            for (int i = 0; i < 12; i++)
+            {
+                int randomIndex = Random.Range(0, cardStore.Count);
+                cardActive.Add(cardStore[randomIndex]);
+                cardStore.RemoveAt(randomIndex);
+            }
+            int cardCount = 0;
+            for (int yPos = 0; yPos < 3; yPos++)
             {
                 Instantiate(card[cardActive[cardCount]], new Vector3(xPos, yPos, 0), new Quaternion(0, 0, 0, 0));
                 cardCount++;
+                for (int xPos = 1; xPos < 4; xPos++)
+                {
+                    Instantiate(card[cardActive[cardCount]], new Vector3(xPos, yPos, 0), new Quaternion(0, 0, 0, 0));
+                    cardCount++;
+                }
             }
+            yesButton.GetComponent<MemoryLevel>().buttonPressed = false;
+            buttonPressed = false;
         }
 	}
 }

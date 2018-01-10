@@ -16,7 +16,7 @@ public class Tile : MonoBehaviour
 
     void Start () {
         // to make testing easier
-        state = TileState.raked;
+        state = TileState.blank;
     }
 	
 	void Update () {
