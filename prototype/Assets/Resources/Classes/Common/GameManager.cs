@@ -82,8 +82,8 @@ public class GameManager : MonoBehaviour {
 
     public void ResetLevelData(string levelName, int accountID)
     {
-        PlayerPrefs.SetString(levelName + "-date-" + accountID, "0 0 0 0 0 0");
-        PlayerPrefs.SetString(levelName + "-time-" + accountID, "0 0 0 0 0 0");
-        PlayerPrefs.SetString(levelName + "-score-" + accountID, "0 0 0 0 0 0");
+        PlayerPrefs.SetString(levelName + "-date-" + accountID, "");
+        PlayerPrefs.SetString(levelName + "-time-" + accountID, "");
+        PlayerPrefs.SetString(levelName + "-score-" + accountID, "");
     }
 }

@@ -24,7 +24,7 @@ public class MonitorView : MonoBehaviour {
 
     public void ShowData() {
         
-        for (int i = 0; i <= 5; i++)
+        for (int i = 0; i < 6; i++)
         {
             scores[i].text = GetScores(userSelect.text, levelSelect.text)[i];
             times[i].text = GetTimes(userSelect.text, levelSelect.text)[i];

@@ -831,9 +831,15 @@ Prefab:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 2106156261}
-    - target: {fileID: 1376070755241992, guid: 7f28a5d8e5f31e94480aa89da4f2956c, type: 2}
-      propertyPath: m_IsActive
-      value: 0
+    - target: {fileID: 114704248403093568, guid: 7f28a5d8e5f31e94480aa89da4f2956c,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2136692361}
+    - target: {fileID: 114704248403093568, guid: 7f28a5d8e5f31e94480aa89da4f2956c,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: loadPuzzle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7f28a5d8e5f31e94480aa89da4f2956c, type: 2}
@@ -2762,6 +2768,12 @@ GameObject:
   m_PrefabParentObject: {fileID: 1376070755241992, guid: 7f28a5d8e5f31e94480aa89da4f2956c,
     type: 2}
   m_PrefabInternal: {fileID: 691220277}
+--- !u!114 &2136692361 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114677399497484938, guid: 7f28a5d8e5f31e94480aa89da4f2956c,
+    type: 2}
+  m_PrefabInternal: {fileID: 691220277}
+  m_Script: {fileID: 11500000, guid: 7880f40cbc30afa46a01ef6fc96af8a1, type: 3}
 --- !u!1 &2145814215
 GameObject:
   m_ObjectHideFlags: 0

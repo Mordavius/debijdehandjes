@@ -12,32 +12,42 @@ public class Results : MonoBehaviour {
     public float baseScore;
     public float multiplier;
     string levelName;
-    string score;
+    float score;
+    int scoreInt;
+    int timeInt;
     string currentHighestScoreString;
     string[] scores;
     string scoreList;
     string dateList;
     string timeList;
     public GameManager gameManager;
-    string keyName;
+    string scoreKey;
+    string timeKey;
+    string dateKey;
 
     // Use this for initialization
     void Start () {
         levelName = SceneManager.GetActiveScene().name;
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
-        keyName = levelName + "-score-" + gameManager.gameManagerAccountID;
-        scoreList = PlayerPrefs.GetString(keyName);
+        scoreKey = levelName + "-score-" + gameManager.gameManagerAccountID;
+        timeKey = levelName + "-time-" + gameManager.gameManagerAccountID;
+        dateKey = levelName + "-date-" + gameManager.gameManagerAccountID;
+        scoreList = PlayerPrefs.GetString(scoreKey);
+        dateList = PlayerPrefs.GetString(dateKey);
+        timeList = PlayerPrefs.GetString(timeKey);
         
         multiplier = multiplier - (Time.timeSinceLevelLoad * 0.05f);
         if (multiplier <= 1)
         {
             multiplier = 1;
         }
-        score = (baseScore * multiplier).ToString();
-        behaaldeScore.text = score;
-        PlayerPrefs.SetString(keyName, scoreList + " " + score);
-        PlayerPrefs.SetString(levelName+ "-date-" + gameManager.gameManagerAccountID, dateList + " " + DateTime.Today.ToString("dd/MM/yyyy"));
-        PlayerPrefs.SetString(levelName + "-time-" + gameManager.gameManagerAccountID, timeList + " " + Time.timeSinceLevelLoad.ToString());
+        score = baseScore * multiplier;
+        scoreInt = (int)score;
+        timeInt = (int)Time.timeSinceLevelLoad;
+        behaaldeScore.text = scoreInt.ToString();
+        PlayerPrefs.SetString(scoreKey, scoreList + " " + scoreInt.ToString());
+        PlayerPrefs.SetString(dateKey, dateList + " " + DateTime.Today.ToString("dd/MM/yyyy"));
+        PlayerPrefs.SetString(timeKey, timeList + " " + timeInt.ToString() + "s");
         hoogsteScore.text = GetHighestScore();
 	}
 
@@ -45,14 +55,13 @@ public class Results : MonoBehaviour {
     {
         float currentScore = 0.0f;
         float highestScore = 0.0f;
-        scores = PlayerPrefs.GetString(keyName).Split(' ');
+        scores = PlayerPrefs.GetString(scoreKey).Split(' ');
         foreach (string gottenScore in scores)
         {
             float.TryParse(gottenScore, out currentScore);
-            //if (float.Parse(gottenScore, CultureInfo.InvariantCulture.NumberFormat) > currentHighestScore)
             if (highestScore < currentScore)
             {
-                highestScore = currentScore;
+                highestScore = (int)currentScore;
                 currentHighestScoreString = highestScore.ToString();
             }
             }
