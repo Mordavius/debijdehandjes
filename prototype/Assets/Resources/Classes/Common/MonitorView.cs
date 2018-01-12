@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Monitor : MonoBehaviour {
+public class MonitorView : MonoBehaviour {
 
     public int[] scores;
     public float[] times;
