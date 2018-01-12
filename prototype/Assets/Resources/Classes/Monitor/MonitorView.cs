@@ -14,7 +14,7 @@ public class MonitorView : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
-
+        ShowData();
     }
 
     // Update is called once per frame
@@ -22,9 +22,9 @@ public class MonitorView : MonoBehaviour {
 
     }
 
-    private void ShowData() {
+    public void ShowData() {
         
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i <= 5; i++)
         {
             scores[i].text = GetScores(userSelect.text, levelSelect.text)[i];
             times[i].text = GetTimes(userSelect.text, levelSelect.text)[i];
@@ -40,7 +40,7 @@ public class MonitorView : MonoBehaviour {
         {
 
         }*/
-        for (int i = dateList.Length - 6; i <= dateList.Length; i++)
+        for (int i = (dateList.Length - 6); i <= (dateList.Length -1); i++)
         {
             dates[j] = dateList[i];
             j++;
@@ -56,7 +56,7 @@ public class MonitorView : MonoBehaviour {
         {
 
         }*/
-        for (int i = timesList.Length - 6; i <= timesList.Length; i++)
+        for (int i = (timesList.Length - 6); i <= (timesList.Length -1); i++)
         {
             times[j] = timesList[i];
             j++;
@@ -72,7 +72,7 @@ public class MonitorView : MonoBehaviour {
         {
 
         }*/
-        for (int i = scoresList.Length - 6; i <= scoresList.Length; i++)
+        for (int i = (scoresList.Length - 6); i <= (scoresList.Length -1); i++)
         {
             newScores[j] = scoresList[i];
             j++;

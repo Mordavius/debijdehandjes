@@ -41,6 +41,11 @@ public class LoadScenes : MonoBehaviour {
         SceneManager.LoadScene("selectAccount");
     }
 
+    public void loadMonitor()
+    {
+        SceneManager.LoadScene("Monitor");
+    }
+
     public void closeGame()
     {
         Application.Quit();

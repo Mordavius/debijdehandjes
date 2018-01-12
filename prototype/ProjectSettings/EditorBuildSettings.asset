@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Resources/Scenes/Garden/moestuin.unity
     guid: bba06ad834ae0e842aed89bd44ecd459
-  - enabled: 1
+  - enabled: 0
     path: Assets/Resources/Scenes/Harvest/CarrotPulling.unity
     guid: a0fbc2a8af8defb43bd15035819e3148
   - enabled: 1
@@ -26,3 +26,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Resources/Scenes/Common/selectAccount.unity
     guid: 8de4336ccec46044584b2037cb4c0429
+  - enabled: 1
+    path: Assets/Resources/Scenes/Monitor/Monitor.unity
+    guid: e90ef1564e4952d4bac0853181e2f5e5

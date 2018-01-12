@@ -180,7 +180,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Account 1
+  m_Text: 1
 --- !u!222 &19423641
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2583,9 +2583,9 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: Pompen
+    - m_Text: pompen
       m_Image: {fileID: 0}
-    - m_Text: Puzzel
+    - m_Text: puzzel
       m_Image: {fileID: 0}
     - m_Text: Memory
       m_Image: {fileID: 0}
@@ -3104,15 +3104,26 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: Account 1
+    - m_Text: 1
       m_Image: {fileID: 0}
-    - m_Text: Account 2
+    - m_Text: 2
       m_Image: {fileID: 0}
-    - m_Text: Account 3
+    - m_Text: 3
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1608613943}
+        m_MethodName: ShowData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Dropdown+DropdownEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1503670878
@@ -3234,6 +3245,7 @@ GameObject:
   - component: {fileID: 1608613940}
   - component: {fileID: 1608613939}
   - component: {fileID: 1608613943}
+  - component: {fileID: 1608613944}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3355,6 +3367,40 @@ MonoBehaviour:
   - {fileID: 170249632}
   levelSelect: {fileID: 2109921130}
   userSelect: {fileID: 19423640}
+--- !u!114 &1608613944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1608613938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9047068f483d9a349b7e7aca7ae57432, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scores:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  times:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  dates:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  levelSelect: {fileID: 0}
+  userSelect: {fileID: 0}
 --- !u!1 &1708324279
 GameObject:
   m_ObjectHideFlags: 0
@@ -3893,7 +3939,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pompen
+  m_Text: pompen
 --- !u!222 &2109921131
 CanvasRenderer:
   m_ObjectHideFlags: 0

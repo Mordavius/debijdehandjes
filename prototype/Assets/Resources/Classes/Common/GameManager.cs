@@ -73,7 +73,17 @@ public class GameManager : MonoBehaviour {
         accountScore = "score-" + gameManagerAccountID;
         score = 0;
         PlayerPrefs.SetInt(accountScore, 0);
+        ResetLevelData("Memory", gameManagerAccountID);
+        ResetLevelData("pompen", gameManagerAccountID);
+        ResetLevelData("puzzel", gameManagerAccountID);
         PlayerPrefs.SetString(accountName, null);
         PlayerPrefs.Save();
+    }
+
+    public void ResetLevelData(string levelName, int accountID)
+    {
+        PlayerPrefs.SetString(levelName + "-date-" + accountID, "0 0 0 0 0 0");
+        PlayerPrefs.SetString(levelName + "-time-" + accountID, "0 0 0 0 0 0");
+        PlayerPrefs.SetString(levelName + "-score-" + accountID, "0 0 0 0 0 0");
     }
 }
