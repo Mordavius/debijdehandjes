@@ -16,6 +16,8 @@ public class PairCards : MonoBehaviour {
     bool touching = false;
     public bool turnable;
     bool turnable2;
+    bool paired;
+    GameObject[] toPair = new GameObject[2];
 
     void Update () {
         int touches = Input.touchCount;
@@ -51,8 +53,9 @@ public class PairCards : MonoBehaviour {
                 }
                 if (hit.collider.CompareTag(hit2.collider.tag) && hit.collider != hit2.collider)
                 {
-                    Destroy(hit.collider.gameObject);
-                    Destroy(hit2.collider.gameObject);
+                    paired = true;
+                    toPair[0] = hit.collider.gameObject;
+                    toPair[1] = hit2.collider.gameObject;
                 }
             }
         }
@@ -72,6 +75,19 @@ public class PairCards : MonoBehaviour {
         {
             scoreScreen.SetActive(true);
             GetComponent<AudioSource>().mute = true;
+        }
+        if (paired)
+        {
+            toPair[0].transform.localScale -= new Vector3(0.01f, 0.01f, 0.01f);
+            toPair[1].transform.localScale -= new Vector3(0.01f, 0.01f, 0.01f);
+            if (toPair[0].transform.localScale.x <= 0 && toPair[1].transform.localScale.x <= 0)
+            {
+                Destroy(toPair[0]);
+                Destroy(toPair[1]);
+                toPair[0] = null;
+                toPair[1] = null;
+                paired = false;
+            }
         }
     }
 }
