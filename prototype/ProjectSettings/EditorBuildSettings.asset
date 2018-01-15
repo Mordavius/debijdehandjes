@@ -29,3 +29,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Resources/Scenes/Monitor/Monitor.unity
     guid: e90ef1564e4952d4bac0853181e2f5e5
+  - enabled: 1
+    path: Assets/Resources/Scenes/Monitor/newmonitor.unity
+    guid: 72a1f62abe997154f91369b276297529

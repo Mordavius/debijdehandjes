@@ -23,44 +23,17 @@ public class Account : MonoBehaviour {
             buttonAccount2.GetComponent<Image>().color = Color.white;
             buttonAccount3.GetComponent<Image>().color = Color.white;
         }
-        else if(GameManager.gameManagerAccountID == 2)
+        else if (GameManager.gameManagerAccountID == 2)
         {
             buttonAccount1.GetComponent<Image>().color = Color.white;
             buttonAccount2.GetComponent<Image>().color = Color.green;
             buttonAccount3.GetComponent<Image>().color = Color.white;
         }
-        else if(GameManager.gameManagerAccountID == 3)
+        else if (GameManager.gameManagerAccountID == 3)
         {
             buttonAccount1.GetComponent<Image>().color = Color.white;
             buttonAccount2.GetComponent<Image>().color = Color.white;
             buttonAccount3.GetComponent<Image>().color = Color.green;
-        }
-
-        if (GameManager.accountName1 != null || GameManager.accountName1 == "")
-        {
-            buttonAccount1.GetComponentInChildren<Text>().text = GameManager.accountName1;
-        }
-        else
-        {
-            buttonAccount1.GetComponentInChildren<Text>().text = "Account 1";
-        }
-
-        if (GameManager.accountName2 != null || GameManager.accountName2 == "")
-        {
-            buttonAccount2.GetComponentInChildren<Text>().text = GameManager.accountName2;
-        }
-        else
-        {
-            buttonAccount2.GetComponentInChildren<Text>().text = "Account 2";
-        }
-
-        if (GameManager.accountName3 != null || GameManager.accountName3 == "")
-        {
-            buttonAccount3.GetComponentInChildren<Text>().text = GameManager.accountName3;
-        }
-        else
-        {
-            buttonAccount3.GetComponentInChildren<Text>().text = "Account 3";
         }
     }
 

@@ -43,7 +43,7 @@ public class LoadScenes : MonoBehaviour {
 
     public void loadMonitor()
     {
-        SceneManager.LoadScene("Monitor");
+        SceneManager.LoadScene("newmonitor");
     }
 
     public void closeGame()
