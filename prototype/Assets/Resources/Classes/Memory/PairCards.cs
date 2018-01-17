@@ -78,6 +78,8 @@ public class PairCards : MonoBehaviour {
         }
         if (paired)
         {
+            Destroy(toPair[0].GetComponent<BoxCollider2D>());
+            Destroy(toPair[1].GetComponent<BoxCollider2D>());
             toPair[0].transform.localScale -= new Vector3(0.01f, 0.01f, 0.01f);
             toPair[1].transform.localScale -= new Vector3(0.01f, 0.01f, 0.01f);
             if (toPair[0].transform.localScale.x <= 0 && toPair[1].transform.localScale.x <= 0)
