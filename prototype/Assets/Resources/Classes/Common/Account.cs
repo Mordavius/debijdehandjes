@@ -9,6 +9,8 @@ public class Account : MonoBehaviour {
     public GameObject buttonAccount1;
     public GameObject buttonAccount2;
     public GameObject buttonAccount3;
+    public GameObject buttonAccount4;
+    public GameObject buttonAccount5;
 
     private void Start()
     {
@@ -22,18 +24,40 @@ public class Account : MonoBehaviour {
             buttonAccount1.GetComponent<Image>().color = Color.green;
             buttonAccount2.GetComponent<Image>().color = Color.white;
             buttonAccount3.GetComponent<Image>().color = Color.white;
+            buttonAccount4.GetComponent<Image>().color = Color.white;
+            buttonAccount5.GetComponent<Image>().color = Color.white;
         }
         else if (GameManager.gameManagerAccountID == 2)
         {
             buttonAccount1.GetComponent<Image>().color = Color.white;
             buttonAccount2.GetComponent<Image>().color = Color.green;
             buttonAccount3.GetComponent<Image>().color = Color.white;
+            buttonAccount4.GetComponent<Image>().color = Color.white;
+            buttonAccount5.GetComponent<Image>().color = Color.white;
         }
         else if (GameManager.gameManagerAccountID == 3)
         {
             buttonAccount1.GetComponent<Image>().color = Color.white;
             buttonAccount2.GetComponent<Image>().color = Color.white;
             buttonAccount3.GetComponent<Image>().color = Color.green;
+            buttonAccount4.GetComponent<Image>().color = Color.white;
+            buttonAccount5.GetComponent<Image>().color = Color.white;
+        }
+        else if (GameManager.gameManagerAccountID == 4)
+        {
+            buttonAccount1.GetComponent<Image>().color = Color.white;
+            buttonAccount2.GetComponent<Image>().color = Color.white;
+            buttonAccount3.GetComponent<Image>().color = Color.white;
+            buttonAccount4.GetComponent<Image>().color = Color.green;
+            buttonAccount5.GetComponent<Image>().color = Color.white;
+        }
+        else if (GameManager.gameManagerAccountID == 5)
+        {
+            buttonAccount1.GetComponent<Image>().color = Color.white;
+            buttonAccount2.GetComponent<Image>().color = Color.white;
+            buttonAccount3.GetComponent<Image>().color = Color.white;
+            buttonAccount4.GetComponent<Image>().color = Color.white;
+            buttonAccount5.GetComponent<Image>().color = Color.green;
         }
     }
 
@@ -52,6 +76,16 @@ public class Account : MonoBehaviour {
         GameManager.LoadAccountData(3);
     }
 
+    public void ChooseAccount4()
+    {
+        GameManager.LoadAccountData(4);
+    }
+
+    public void ChooseAccount5()
+    {
+        GameManager.LoadAccountData(5);
+    }
+
     public void ResetAccount1()
     {
         GameManager.ResetAccountData(1);
@@ -67,20 +101,13 @@ public class Account : MonoBehaviour {
         GameManager.ResetAccountData(3);
     }
 
-    //OnValueChanged, dynamic ipv static REMINDER VOOR RUBEN
-    public void ChangeAccountName1(string newName)
+    public void ResetAccount4()
     {
-        Debug.Log(newName);
-        GameManager.SaveAccountNameData(newName, 1);
+        GameManager.ResetAccountData(4);
     }
 
-    public void ChangeAccountName2(string newName)
+    public void ResetAccount5()
     {
-        GameManager.SaveAccountNameData(newName, 2);
-    }
-
-    public void ChangeAccountName3(string newName)
-    {
-        GameManager.SaveAccountNameData(newName, 3);
+        GameManager.ResetAccountData(5);
     }
 }
